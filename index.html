@@ -2,36 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>我的字型預覽</title>
+    <title>字型預覽範例</title>
     <style>
-      /* 步驟：定義 @font-face 來載入自訂字型 */
       @font-face {
-        font-family: 'MyFont';
-        src: url('./華康少女文字W5.ttf') format('truetype'); 
-        /* 
-          如果你上傳的字型叫 otherName.ttf 
-          就改成 ./otherName.ttf 
+        font-family: 'HKGirlFont'; /* 這裡給字型一個程式碼用的名字 (可自行改) */
+        src: url('./華康少女文字W5.TTF') format('truetype');
+        /*
+          若華康少女文字W5.TTF不在同一層資料夾，需改寫路徑。
+          例如: url('./fonts/華康少女文字W5.TTF')
         */
       }
 
       body {
         margin: 20px;
-        font-size: 18px;
+        font-size: 16px;
       }
 
       #preview {
-        font-family: 'MyFont'; /* 套用你剛剛定義的字型 */
-        margin-top: 10px;
+        font-family: 'HKGirlFont'; /* 使用上面定義的字型名稱 */
         font-size: 24px;
+        margin-top: 10px;
       }
     </style>
   </head>
   <body>
-    <h1>輸入文字預覽字型</h1>
+    <h1>華康少女文字預覽</h1>
     <input
       id="textInput"
       type="text"
-      placeholder="在此輸入文字，看看字型效果..."
+      placeholder="輸入文字..."
       style="width: 300px;"
     />
     <div id="preview">這裡會顯示字型預覽</div>
@@ -40,7 +39,7 @@
       const input = document.getElementById('textInput');
       const preview = document.getElementById('preview');
 
-      // 監聽使用者輸入，每次輸入時即時更新預覽
+      // 監聽使用者的輸入，即時更新預覽區
       input.addEventListener('input', function () {
         const userText = input.value.trim() || '這裡會顯示字型預覽';
         preview.textContent = userText;
