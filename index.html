@@ -5,11 +5,11 @@
     <title>字型預覽範例</title>
     <style>
       @font-face {
-        font-family: 'HKGirlFont'; /* 這裡給字型一個程式碼用的名字 (可自行改) */
-        src: url('./華康少女文字W5.TTF') format('truetype');
-        /*
-          若華康少女文字W5.TTF不在同一層資料夾，需改寫路徑。
-          例如: url('./fonts/華康少女文字W5.TTF')
+        font-family: 'HKGirlFont'; /* 為程式裡定義的字型名稱，隨你取 */
+        src: url('./HKGirlW5.ttf') format('truetype'); 
+        /* 
+          確保檔名和位置相符。如果你的字型檔放在同一層資料夾內，
+          就用這個寫法。如果放在 fonts/ 資料夾，就改成 ./fonts/HKGirlW5.ttf
         */
       }
 
@@ -19,14 +19,14 @@
       }
 
       #preview {
-        font-family: 'HKGirlFont'; /* 使用上面定義的字型名稱 */
+        font-family: 'HKGirlFont'; /* 使用你在 @font-face 中設定的名稱 */
         font-size: 24px;
         margin-top: 10px;
       }
     </style>
   </head>
   <body>
-    <h1>華康少女文字預覽</h1>
+    <h1>輸入文字預覽字型</h1>
     <input
       id="textInput"
       type="text"
@@ -39,7 +39,7 @@
       const input = document.getElementById('textInput');
       const preview = document.getElementById('preview');
 
-      // 監聽使用者的輸入，即時更新預覽區
+      // 監聽使用者的輸入，即時更新預覽區文字
       input.addEventListener('input', function () {
         const userText = input.value.trim() || '這裡會顯示字型預覽';
         preview.textContent = userText;
