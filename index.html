@@ -5,11 +5,11 @@
     <title>字型預覽範例</title>
     <style>
       @font-face {
-        font-family: 'HKGirlFont'; /* 為程式裡定義的字型名稱，隨你取 */
-        src: url('./HKGirlW5.ttf') format('truetype'); 
-        /* 
-          確保檔名和位置相符。如果你的字型檔放在同一層資料夾內，
-          就用這個寫法。如果放在 fonts/ 資料夾，就改成 ./fonts/HKGirlW5.ttf
+        font-family: 'HKGirlFont'; /* 自訂的字型名稱，可自行修改 */
+        src: url('./HKGirlW5.ttf') format('truetype');
+        /*
+          這裡用 ./HKGirlW5.ttf
+          因為檔案與 index.html 同一層
         */
       }
 
@@ -19,7 +19,7 @@
       }
 
       #preview {
-        font-family: 'HKGirlFont'; /* 使用你在 @font-face 中設定的名稱 */
+        font-family: 'HKGirlFont'; /* 套用上面定義的字型 */
         font-size: 24px;
         margin-top: 10px;
       }
@@ -39,7 +39,7 @@
       const input = document.getElementById('textInput');
       const preview = document.getElementById('preview');
 
-      // 監聽使用者的輸入，即時更新預覽區文字
+      // 監聽使用者的輸入，每次輸入就更新預覽文字
       input.addEventListener('input', function () {
         const userText = input.value.trim() || '這裡會顯示字型預覽';
         preview.textContent = userText;
