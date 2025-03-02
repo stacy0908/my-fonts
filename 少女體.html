@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>我的字型預覽</title>
+    <style>
+      /* 步驟：定義 @font-face 來載入自訂字型 */
+      @font-face {
+        font-family: 'MyFont';
+        src: url('./華康少女文字W5.ttf') format('truetype'); 
+        /* 
+          如果你上傳的字型叫 otherName.ttf 
+          就改成 ./otherName.ttf 
+        */
+      }
+
+      body {
+        margin: 20px;
+        font-size: 18px;
+      }
+
+      #preview {
+        font-family: 'MyFont'; /* 套用你剛剛定義的字型 */
+        margin-top: 10px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>輸入文字預覽字型</h1>
+    <input
+      id="textInput"
+      type="text"
+      placeholder="在此輸入文字，看看字型效果..."
+      style="width: 300px;"
+    />
+    <div id="preview">這裡會顯示字型預覽</div>
+
+    <script>
+      const input = document.getElementById('textInput');
+      const preview = document.getElementById('preview');
+
+      // 監聽使用者輸入，每次輸入時即時更新預覽
+      input.addEventListener('input', function () {
+        const userText = input.value.trim() || '這裡會顯示字型預覽';
+        preview.textContent = userText;
+      });
+    </script>
+  </body>
+</html>
