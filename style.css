@@ -54,9 +54,9 @@ html, body {
 /* ★ 下方 2 欄 (left / right) 採絕對定位 */
 .two-col-boxes {
   position: absolute;
-  top: 28%;            /* 下方框與上方透明框的距離 */
+  top: 35%;            /* 下方框與上方透明框的距離 */
   left: 47%;           /* 往左些，可依需求調整 */
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -48%);
   display: flex;       /* 左欄、右欄 並排 */
   gap: 40px;           /* 欄之間的距離 */
   z-index: 1;
