@@ -1,80 +1,24 @@
-/* 1) 取消預設邊距與內距，避免出現捲軸問題或白邊 */
+/* 1) 重置 */
 html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
 
-/* 2) 不固定高度，由圖片本身決定容器高度 */
+/* 2) 父容器不固定高度，由圖片決定 */
 .background-container {
-  position: relative; /* 子元素才可使用絕對定位 */
+  position: relative;
   width: 100%;
 }
 
-/* 3) 讓 <img> 寬度 100%，高度自動，以維持比例 */
-.background-container img {
-  display: block; 
-  width: 100%;
-  height: auto;
-}
-
-/* 4) 上方浮在圖片之上的白色半透明框 */
-.overlay-text {
-  position: absolute;
-  top: 16%; /* 可視需要調整數值，以避免與下方框重疊 */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-  background: rgba(255, 255, 255, 0.7);
-  color: #888;
-  padding: 15px 20px;
-  border-radius: 25px;
-  text-align: center;
-  z-index: 1; /* 確保在背景圖片之上 */
-}
-
-.overlay-text h1 {
-  margin: 0;
-  font-size: 16px; /* 字體變小 */
-  color: #888;
-}
-
-/* 輸入框樣式：也在同一個半透明框內 */
-.overlay-text input {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  margin-top: 10px;
-  padding: 15px;
-  font-size: 16px;
-  color: #666;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* ★ 下方 2 欄白色框：也採絕對定位，改為純白 & 拉近與上方距離 ★ */
-/* 1) 取消預設邊距與內距，避免出現捲軸問題或白邊 */
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* 2) 不固定高度，由圖片本身決定容器高度 */
-.background-container {
-  position: relative; /* 子元素才可使用絕對定位 */
-  width: 100%;
-}
-
-/* 3) 讓 <img> 寬度 100%，高度自動，以維持比例 */
+/* 3) 圖片鋪滿寬度 */
 .background-container img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* 4) 上方浮在圖片之上的白色半透明框 */
+/* 4) 上方浮在圖片的白色半透明框 */
 .overlay-text {
   position: absolute;
   top: 16%;
@@ -94,7 +38,6 @@ html, body {
   color: #888;
 }
 
-/* 輸入框樣式 */
 .overlay-text input {
   display: block;
   width: 100%;
@@ -108,36 +51,46 @@ html, body {
   border-radius: 5px;
 }
 
+/* ★ 下方 2 欄 (left / right) 採絕對定位 */
 .two-col-boxes {
   position: absolute;
-  top: 28%; /* ✅ 確保下方白色框與上方透明框距離適中 */
-  left: 47%;
+  top: 28%;            /* 下方框與上方透明框的距離 */
+  left: 47%;           /* 往左些，可依需求調整 */
   transform: translate(-50%, -50%);
-  
-  display: flex;
-  gap: 20px; /* ✅ 原本是 20px，現在改為 40px，讓左右框距離變大 */
+  display: flex;       /* 左欄、右欄 並排 */
+  gap: 40px;           /* 欄之間的距離 */
   z-index: 1;
-  
   width: 80%;
   max-width: 800px;
   text-align: center;
 }
 
-/* 2 個白色框的外觀 (改成純白不透明 + 陰影) */
-.two-col-boxes .box {
-  flex: none;
-  width: 130px;        /* 你想要的固定寬度 */
-  height: 100px;       /* 你想要的固定高度 */
-  background: rgba(255, 255, 255, 0.5); /* 改為半透明白色 */
-  color: #666;
-  border-radius: 25px;
-  padding: 20px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* ✅ 增加陰影 */
+/* ★ 每欄上下 2 框 → 用 flex column，並加 gap 控制上下距離 */
+.two-col-boxes .column {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; /* 上/下框之間的距離，可自行調整 */
 }
 
-/* 預覽名字字體變大 */
+/* ★ 每個白色透明框的外觀 (固定尺寸、半透明、陰影) */
+.two-col-boxes .box {
+  flex: none;
+  width: 130px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #666;
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+
+  display: flex;           /* 文字居中 */
+  justify-content: center;
+  align-items: center;
+}
+
+/* 文字大小/顏色可依需求 */
 .two-col-boxes .box p {
-  font-size: 20px; /* ✅ 讓文字變大 */
-  font-weight: bold; /* ✅ 讓字體變粗 */
-  color: #333; /* ✅ 讓字體變深，提高可讀性 */
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
 }
