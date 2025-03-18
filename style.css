@@ -126,7 +126,7 @@ html, body {
 /* 2 個白色框的外觀 (改成純白不透明 + 陰影) */
 .two-col-boxes .box {
   flex: none;
-  width: 150px;        /* 你想要的固定寬度 */
+  width: 130px;        /* 你想要的固定寬度 */
   height: 100px;       /* 你想要的固定高度 */
   background: rgba(255, 255, 255, 0.5); /* 改為半透明白色 */
   color: #666;
