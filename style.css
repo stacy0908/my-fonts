@@ -1,48 +1,45 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
-/* 背景圖片容器 */
+/* 背景容器，確保高度足夠讓滾動時能完整顯示圖片 */
 .background-container {
-    width: 100%;
-    height: 150vh; /* 讓背景圖片比視窗長，確保滾動時可看到下半部 */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    overflow: hidden;
     position: relative;
+    width: 100%;
+    height: 200vh; /* 讓圖片比視窗還長，滾動時能完整顯示 */
 }
 
-/* 背景圖片 */
+/* 背景圖片設定，確保完整顯示 */
 .background-container img {
+    position: fixed; /* 固定在畫面上，但內容會滾動 */
     width: 100%;
     height: auto;
-    position: absolute;
     top: 0;
 }
 
-/* 讓標題和文字浮在背景圖片上 */
+/* 浮在背景上的文字 */
 .overlay-text {
     position: absolute;
-    top: 30%; /* 控制文字出現的位置 */
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white; /* 設定文字顏色 */
+    color: white;
     font-size: 24px;
     font-weight: bold;
-    z-index: 10; /* 確保在最上層 */
-    background: rgba(0, 0, 0, 0.5); /* 加個半透明背景讓字更清楚 */
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
 
-/* 內容區域，讓頁面可滾動 */
+/* 內容區域，讓使用者可以繼續滾動 */
 .content {
-    height: 150vh;
+    position: relative;
+    z-index: 2; /* 確保內容在背景圖片之上 */
     background-color: white;
     text-align: center;
-    padding: 50px;
+    padding: 100px 20px;
 }
-
