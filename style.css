@@ -58,7 +58,7 @@ html, body {
   left: 47%;           /* 往左些，可依需求調整 */
   transform: translate(-50%, -48%);
   display: flex;       /* 左欄、右欄 並排 */
-  gap: 40px;           /* 欄之間的距離 */
+  gap: 30px;           /* 欄之間的距離 */
   z-index: 1;
   width: 80%;
   max-width: 800px;
