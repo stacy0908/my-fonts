@@ -37,6 +37,6 @@ html, body {
 
 .overlay-text h1 {
   margin: 0;
-  font-size: 18px; /* ✅ 字體變小，原本可能是 24px~30px，現在縮小 */
-  color: #666;
+  font-size: 8px; /* ✅ 字體變小，原本可能是 24px~30px，現在縮小 */
+  color: #888;
 }
