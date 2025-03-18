@@ -133,10 +133,6 @@ html, body {
   border-radius: 25px;
   padding: 20px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* ✅ 增加陰影 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }
 
 /* 預覽名字字體變大 */
