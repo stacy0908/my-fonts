@@ -56,7 +56,7 @@ html, body {
 /* ★ 下方 2 欄白色框：也採絕對定位，改為純白 & 拉近與上方距離 ★ */
 .two-col-boxes {
   position: absolute;     
-  top: 30%;               /* 原本 20%，調小以讓它更靠近上方框 */
+  top: 25%;               /* 原本 20%，調小以讓它更靠近上方框 */
   left: 50%;
   transform: translate(-50%, -50%);
   
@@ -82,5 +82,5 @@ html, body {
 .two-col-boxes .box p {
   font-size: 20px; /* ✅ 增加字體大小，例如 20px，可視需求調整 */
   font-weight: bold; /* ✅ 可選，讓字體變粗 */
-  color: #333; /* ✅ 讓字體變深一些，提高可讀性 */
+  color: #888; /* ✅ 讓字體變深一些，提高可讀性 */
 }
