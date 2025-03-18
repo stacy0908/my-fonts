@@ -111,7 +111,7 @@ html, body {
 .two-col-boxes {
   position: absolute;
   top: 28%; /* ✅ 確保下方白色框與上方透明框距離適中 */
-  left: 45%;
+  left: 47%;
   transform: translate(-50%, -50%);
   
   display: flex;
