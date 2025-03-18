@@ -6,23 +6,27 @@ body {
 /* 背景圖片容器 */
 .background-container {
     width: 100%;
-    height: 100vh; /* 讓圖片填滿第一屏 */
+    height: 150vh; /* 設定高度比視窗還長，讓使用者可滾動看到圖片 */
     display: flex;
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
+    position: relative;
 }
 
-/* 背景圖片設定，確保完整顯示 */
+/* 背景圖片設定 */
 .background-container img {
     width: 100%;
     height: auto;
+    position: absolute;
+    top: 0;
 }
 
 /* 內容區域，讓使用者可以滾動 */
 .content {
-    height: 150vh; /* 讓使用者可以滾動，看到圖片的下半部 */
+    height: 150vh; /* 讓使用者可以滾動 */
     background-color: white;
     text-align: center;
     padding: 50px;
 }
+
