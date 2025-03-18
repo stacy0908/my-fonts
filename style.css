@@ -53,27 +53,26 @@ html, body {
   border-radius: 5px;
 }
 
-/* ★ 新增：下方 2 欄白色框，同樣絕對定位，漂浮在背景圖片上 ★ */
+/* ★ 下方 2 欄白色框：也採絕對定位，改為純白 & 拉近與上方距離 ★ */
 .two-col-boxes {
-  position: absolute;     /* 讓它也浮在 .background-container 上 */
-  top: 40%;               /* 位置可依需要調整，以免和上方框重疊 */
+  position: absolute;     
+  top: 30%;               /* 原本 40%，調小以讓它更靠近上方框 */
   left: 50%;
   transform: translate(-50%, -50%);
   
   display: flex;
-  gap: 20px;             /* 兩欄之間的空隙 */
-  z-index: 1;            /* 浮在圖片之上，可再改大確保更前面 */
+  gap: 20px;             
+  z-index: 1;            
   
-  width: 80%;            /* 區塊的寬度可自行調整 */
-  max-width: 800px;      /* 避免大螢幕時過度放大 */
+  width: 80%;            
+  max-width: 800px;      
   text-align: center;
 }
 
-/* 2 個白色框的外觀 */
+/* 2 個白色框的外觀：改成純白不透明 */
 .two-col-boxes .box {
-  flex: 1; /* 讓兩欄各分一半空間，若想固定寬度可用 flex:0 0 40%; */
-  
-  background: rgba(255, 255, 255, 0.8); /* 白色(或半透明) */
+  flex: 1; 
+  background: #fff; /* ✅ 原本是 rgba(255,255,255,0.8)，改為純白 #fff */
   color: #888;
   border-radius: 25px;
   padding: 20px;
