@@ -56,3 +56,29 @@ html, body {
   border-radius: 5px;         /* 輕微圓角 */
 }
 
+/* ★ 在「白色半透明框」下方，新增兩個左右排列的白色框 ★ */
+
+/* 容器：兩欄佈局 */
+.two-col-boxes {
+  display: flex;
+  justify-content: center; /* 讓兩個框在水平置中 */
+  gap: 20px;               /* 兩欄之間的空隙 */
+  
+  /* 與上方半透明框保持距離，避免重疊，可依背景高度調整 */
+  margin-top: 300px;       
+  padding: 0 20px;         /* 頁面左右保有些許邊距 */
+}
+
+/* 兩個白色框的外觀 */
+.two-col-boxes .box {
+  background: rgba(255, 255, 255, 0.8); /* 白色，可改更透明或不透明 */
+  color: #888;
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+  
+  /* flex: 0 0 40% 代表每個框固定佔容器寬度的 40% */
+  flex: 0 0 40%;
+  max-width: 400px; /* 避免在大螢幕時過度放大 */
+}
+
