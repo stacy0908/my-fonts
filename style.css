@@ -129,7 +129,7 @@ html, body {
   width: 60px;        /* 你想要的固定寬度 */
   height: 100px;       /* 你想要的固定高度 */
   background: rgba(255, 255, 255, 0.5); /* 改為半透明白色 */
-  color: #888;
+  color: #666;
   border-radius: 25px;
   padding: 20px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* ✅ 增加陰影 */
