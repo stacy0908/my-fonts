@@ -141,24 +141,3 @@ html, body {
   font-weight: bold; /* ✅ 讓字體變粗 */
   color: #333; /* ✅ 讓字體變深，提高可讀性 */
 }
-
-/* 2 個白色框的外觀 (改成純白不透明 + 陰影) */
-.two-col-boxes .box {
-  flex: 1;
-  background: #fff; /* ✅ 改為純白 */
-  color: #888;
-  border-radius: 25px;
-  padding: 20px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* ✅ 增加陰影 */
-}
-
-/* 讓 <p> 文字變大，但不影響框大小 */
-.two-col-boxes .box p {
-  font-size: 20px;
-  font-weight: bold;
-  color: #bbb;                   /* 預設較淺色 */
-  transition: color 0.3s ease;
-  white-space: nowrap;           /* 不換行 */
-  text-overflow: ellipsis;       /* 文字過長時顯示省略號 */
-  overflow: hidden;              /* 超出部分隱藏 */
-}
