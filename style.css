@@ -82,6 +82,6 @@ html, body {
 .two-col-boxes .box p {
   font-size: 20px; /* ✅ 增加字體大小，例如 20px，可視需求調整 */
   font-weight: bold; /* ✅ 可選，讓字體變粗 */
-  color: #666; /* ✅ 預設顏色為較淺灰色 */
+  color: #111; /* ✅ 預設顏色為較淺灰色 */
   transition: color 0.3s ease; /* ✅ 讓顏色變化時更平滑 */
 }
