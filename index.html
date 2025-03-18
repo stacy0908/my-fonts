@@ -3,42 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>背景圖片網頁</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html, body {
-            height: 100%;
-            overflow: auto;
-        }
-        body {
-            background: url('background.png') no-repeat top center;
-            background-size: auto;
-            background-attachment: scroll;
-            min-height: 200vh; /* 確保頁面足夠長以便滾動 */
-            font-family: Arial, sans-serif;
-        }
-        .content {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 90%;
-            margin: 20px auto;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2em;
-        }
-        p {
-            font-size: 1.2em;
-        }
-    </style>
+    <title>背景圖片滾動效果</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="background"></div>
+</body>
+</html>
     <div class="content">
         <h1>歡迎來到我的網頁</h1>
         <p>這是一個適用於手機與電腦的背景圖片網頁</p>
