@@ -37,7 +37,7 @@ html, body {
 
 .overlay-text h1 {
   margin: 0;
-  font-size: 18px; /* 字體變小 */
+  font-size: 16px; /* 字體變小 */
   color: #888;
 }
 
@@ -47,7 +47,7 @@ html, body {
   width: 100%;                /* 撐滿白色框的寬度 */
   box-sizing: border-box;      /* 包含 padding 在內 */
   margin-top: 10px;           /* 與標題 h1 保持距離 */
-  padding: 10px;              /* 內距 */
+  padding: 15px;              /* 內距 */
   font-size: 16px;            /* 輸入文字大小 */
   color: #666;                /* 文字顏色 */
   background: #fff;           /* 白色背景，清晰好輸入 */
