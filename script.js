@@ -10,7 +10,7 @@
     leftText.textContent = typedValue || "預覽文字"; 
     rightText.textContent = typedValue || "預覽文字"; 
 
-    // 只改變顏色，不改變字體大小
+    // 根據是否輸入內容來改變顏色
     if (typedValue) {
       leftText.style.color = "#333"; /* ✅ 變深色 */
       rightText.style.color = "#333"; /* ✅ 變深色 */
@@ -20,3 +20,4 @@
     }
   });
 </script>
+
