@@ -56,7 +56,7 @@ html, body {
 /* ★ 下方 2 欄白色框：也採絕對定位，改為純白 & 拉近與上方距離 ★ */
 .two-col-boxes {
   position: absolute;     
-  top: 25%;               /* 原本 20%，調小以讓它更靠近上方框 */
+  top: 28%;               /* 原本 20%，調小以讓它更靠近上方框 */
   left: 50%;
   transform: translate(-50%, -50%);
   
