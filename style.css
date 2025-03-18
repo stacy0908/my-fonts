@@ -71,17 +71,25 @@ html, body {
 
 /* 2 個白色框的外觀：改成純白不透明 */
 .two-col-boxes .box {
-  flex: 1; 
-  background: #fff; /* ✅ 原本是 rgba(255,255,255,0.8)，改為純白 #fff */
+  flex: none; /* ✅ 讓框不會隨容器自適應 */
+  width: 300px; /* ✅ 固定寬度，例如 300px，可自行調整 */
+  height: 150px; /* ✅ 固定高度，例如 150px，可自行調整 */
+  background: #fff;
   color: #888;
   border-radius: 25px;
   padding: 20px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* ✅ 增加陰影 */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center; /* ✅ 讓內容置中 */
+  align-items: center; /* ✅ 垂直置中 */
 }
 
 .two-col-boxes .box p {
-  font-size: 20px; /* ✅ 增加字體大小，例如 20px，可視需求調整 */
-  font-weight: bold; /* ✅ 可選，讓字體變粗 */
-  color: #111; /* ✅ 預設顏色為較淺灰色 */
-  transition: color 0.3s ease; /* ✅ 讓顏色變化時更平滑 */
+  font-size: 20px; /* ✅ 固定字體大小 */
+  font-weight: bold;
+  color: #bbb; /* ✅ 預設淺色 */
+  transition: color 0.3s ease; /* ✅ 讓顏色變化更平滑 */
+  white-space: nowrap; /* ✅ 避免換行，確保字體大小不變 */
+  overflow: hidden; /* ✅ 防止內容溢出 */
+  text-overflow: ellipsis; /* ✅ 內容過長時顯示省略號 */
 }
