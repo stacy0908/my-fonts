@@ -11,21 +11,42 @@
     <!-- 背景圖片 -->
     <img src="background.png" alt="背景圖片" />
 
-    <!-- 浮在圖片上方的文字區塊 (上方) -->
+    <!-- 上方浮在圖片之上的白色半透明框 -->
     <div class="overlay-text">
       <h1>請輸入您寶貝的名字</h1>
-      <input type="text" placeholder="在此輸入名字...">
+      <!-- 新增輸入欄位 (id="inputName") -->
+      <input type="text" id="inputName" placeholder="在此輸入名字...">
     </div>
 
-    <!-- 兩個左右並排的白色框 (也採用絕對定位，浮在圖片上方) -->
+    <!-- 下方 2 欄白色框，文字會同步顯示上方輸入的內容 -->
     <div class="two-col-boxes">
       <div class="box">
-        <p>左邊白色框的內容</p>
+        <!-- 這裡的 <p> 內容會變化 (id="leftText") -->
+        <p id="leftText">左邊白色框的內容</p>
       </div>
       <div class="box">
-        <p>右邊白色框的內容</p>
+        <!-- 這裡的 <p> 內容會變化 (id="rightText") -->
+        <p id="rightText">右邊白色框的內容</p>
       </div>
     </div>
   </div>
+
+  <!-- 可以在同一頁底部加一段簡短的 JS，也可分開 .js 檔 -->
+  <script>
+    // 取得上方輸入框、左右文字區塊的 DOM
+    const inputName = document.getElementById("inputName");
+    const leftText = document.getElementById("leftText");
+    const rightText = document.getElementById("rightText");
+
+    // 監聽輸入框內容改變(input 事件)，即時同步顯示到兩個白色框
+    inputName.addEventListener("input", function() {
+      // 取得目前輸入的文字
+      const typedValue = inputName.value;
+      // 更新左右兩欄白色框的文字
+      leftText.textContent = typedValue;
+      rightText.textContent = typedValue;
+    });
+  </script>
 </body>
 </html>
+
