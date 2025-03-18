@@ -3,16 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>背景圖片滾動效果</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>背景滾動效果</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .background-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background-container img {
+            position: absolute;
+            width: 100%;
+            height: auto;
+        }
+
+        .content {
+            height: 150vh;
+            background-color: white;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
 </head>
 <body>
-    <div class="background.png"></div>
-</body>
-</html>
+    <div class="background-container">
+        <img src="background.png" alt="背景圖片">
+    </div>
     <div class="content">
-        <h1>歡迎來到我的網頁</h1>
-        <p>這是一個適用於手機與電腦的背景圖片網頁</p>
+        <h1>向下滾動查看完整背景</h1>
+        <p>這裡是一般內容區域。</p>
     </div>
 </body>
 </html>
