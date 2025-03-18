@@ -1,25 +1,28 @@
-/* 確保整個網頁不會有額外的邊距 */
-html, body {
+body {
     margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden; /* 禁止左右滾動 */
+    font-family: Arial, sans-serif;
 }
 
-/* 設置背景圖片 */
-.background {
-    background-image: url('background.png');
-    background-size: contain;  /* 讓圖片完整顯示 */
-    background-repeat: no-repeat;
-    background-position: top center;
-    width: 100vw;  /* 設定寬度為視窗寬度 */
-    height: 100vh; /* 先讓高度等於視窗高度 */
+/* 背景圖片容器 */
+.background-container {
+    width: 100%;
+    height: 100vh; /* 讓圖片填滿第一屏 */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
 }
 
-/* 讓背景圖片完整展開並允許滾動 */
-@media (min-width: 768px) { 
-    .background {
-        height: auto;  /* 讓區塊高度隨圖片長度變化 */
-        min-height: 100vh;
-    }
+/* 背景圖片設定，確保完整顯示 */
+.background-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* 內容區域，讓使用者可以滾動 */
+.content {
+    height: 150vh; /* 讓使用者可以滾動，看到圖片的下半部 */
+    background-color: white;
+    text-align: center;
+    padding: 50px;
 }
