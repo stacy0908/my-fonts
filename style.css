@@ -55,19 +55,20 @@ html, body {
 
 /* ★ 下方 2 欄白色框：也採絕對定位，改為純白 & 拉近與上方距離 ★ */
 .two-col-boxes {
-  position: absolute;     
-  top: 28%;               /* 原本 20%，調小以讓它更靠近上方框 */
+  position: absolute;
+  top: 28%; /* ✅ 原本 35%，現在改成 40%，讓它們往下移 */
   left: 50%;
   transform: translate(-50%, -50%);
   
   display: flex;
-  gap: 24px;             
-  z-index: 1;            
+  gap: 40px; /* 兩欄之間距離 */
+  z-index: 1;
   
-  width: 80%;            
-  max-width: 800px;      
+  width: 80%;
+  max-width: 800px;
   text-align: center;
 }
+
 
 /* 2 個白色框的外觀：改成純白不透明 */
 .two-col-boxes .box {
@@ -85,11 +86,8 @@ html, body {
 }
 
 .two-col-boxes .box p {
-  font-size: 20px; /* ✅ 固定字體大小 */
+  font-size: 20px;
   font-weight: bold;
-  color: #bbb; /* ✅ 預設淺色 */
-  transition: color 0.3s ease; /* ✅ 讓顏色變化更平滑 */
-  white-space: nowrap; /* ✅ 避免換行，確保字體大小不變 */
-  overflow: hidden; /* ✅ 防止內容溢出 */
-  text-overflow: ellipsis; /* ✅ 內容過長時顯示省略號 */
+  color: #bbb; /* ✅ 預設顏色為較淺灰色 */
+  transition: color 0.3s ease; /* ✅ 讓顏色變化時更平滑 */
 }
