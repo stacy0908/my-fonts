@@ -70,19 +70,14 @@ html, body {
 }
 
 
-/* 2 個白色框的外觀：改成純白不透明 */
+/* 2 個白色框的外觀 (改成純白不透明 + 陰影) */
 .two-col-boxes .box {
-  flex: none; /* ✅ 讓框不會隨容器自適應 */
-  width: 300px; /* ✅ 固定寬度，例如 300px，可自行調整 */
-  height: 150px; /* ✅ 固定高度，例如 150px，可自行調整 */
-  background: #fff;
+  flex: 1;
+  background: #fff; /* ✅ 改為純白 */
   color: #888;
   border-radius: 25px;
   padding: 20px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center; /* ✅ 讓內容置中 */
-  align-items: center; /* ✅ 垂直置中 */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* ✅ 增加陰影 */
 }
 
 .two-col-boxes .box p {
