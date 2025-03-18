@@ -7,78 +7,74 @@ html, body {
 
 /* 2) 不固定高度，直接由圖片的實際高度撐開容器 */
 .background-container {
-  position: relative; /* 使文字能絕對定位 */
+  position: relative; /* 使文字可絕對定位 */
   width: 100%;
   /* 不設定 height 或 min-height，讓容器高度 = 圖片高度 */
 }
 
 /* 3) <img> 的寬度撐滿，並維持自動高度，以保持比例不被裁切 */
 .background-container img {
-  display: block;     /* 避免 img 預設行內元素底部有空隙 */
+  display: block;     /* 避免 img 行內元素產生底部空隙 */
   width: 100%;
   height: auto;
 }
 
-/* 4) 讓文字浮在圖片上方 */
+/* 4) 浮在圖片上方 */
 .overlay-text {
-  position: absolute;               /* 絕對定位在 .background-container 裡面 */
-  top: 16%;                         /* 文字在視窗大約 18% 處，可依需求調整 */
+  position: absolute; /* 使其浮在背景圖片上 */
+  top: 16%;           /* 可依需求調整，避免與下方內容重疊 */
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.7);
-  
-  /* 半透明白底，確保字體可讀 */
+
   background: rgba(255, 255, 255, 0.7);
   color: #888;
   padding: 15px 20px;
   border-radius: 25px;
   text-align: center;
-  z-index: 1; /* 確保文字在圖片之上 */
+  z-index: 1; /* 確保在圖片之上 */
 }
 
+/* 標題字體縮小 */
 .overlay-text h1 {
   margin: 0;
-  font-size: 16px; /* 字體變小 */
+  font-size: 16px;
   color: #888;
 }
 
-/* ★ 新增輸入框的樣式：讓可輸入文字的白色框更美觀 ★ */
+/* 輸入框樣式 */
 .overlay-text input {
-  display: block;             /* 獨佔一整行 */
-  width: 100%;                /* 撐滿白色框的寬度 */
-  box-sizing: border-box;      /* 包含 padding 在內 */
-  margin-top: 10px;           /* 與標題 h1 保持距離 */
-  padding: 15px;              /* 內距 */
-  font-size: 16px;            /* 輸入文字大小 */
-  color: #666;                /* 文字顏色 */
-  background: #fff;           /* 白色背景，清晰好輸入 */
-  border: 1px solid #ccc;     /* 淺灰色邊框 */
-  border-radius: 5px;         /* 輕微圓角 */
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 16px;
+  color: #666;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 /* ★ 在「白色半透明框」下方，新增兩個左右排列的白色框 ★ */
-
-/* 容器：兩欄佈局 */
 .two-col-boxes {
   display: flex;
-  justify-content: center; /* 讓兩個框在水平置中 */
-  gap: 20px;               /* 兩欄之間的空隙 */
+  justify-content: center; /* 水平置中對齊 */
+  gap: 20px;               /* 兩欄間距 */
   
-  /* 與上方半透明框保持距離，避免重疊，可依背景高度調整 */
+  /* 與上方半透明框保持距離，視需求可調整 */
   margin-top: 300px;       
-  padding: 0 20px;         /* 頁面左右保有些許邊距 */
+  padding: 0 20px;         /* 頁面左右留些空間 */
 }
 
 /* 兩個白色框的外觀 */
 .two-col-boxes .box {
-  background: rgba(255, 255, 255, 0.8); /* 白色，可改更透明或不透明 */
+  background: rgba(255, 255, 255, 0.8);
   color: #888;
   border-radius: 25px;
   padding: 20px;
   text-align: center;
   
-  /* flex: 0 0 40% 代表每個框固定佔容器寬度的 40% */
+  /* 每個框寬度固定約 40%，避免過度展開 */
   flex: 0 0 40%;
-  max-width: 400px; /* 避免在大螢幕時過度放大 */
+  max-width: 400px; /* 避免大螢幕時太寬 */
 }
-
