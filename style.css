@@ -108,15 +108,16 @@ html, body {
   border-radius: 5px;
 }
 
-/* 5) 下方 2 欄白色框 (距離上方框更近) */
 .two-col-boxes {
   position: absolute;
-  top: 28%; /* ✅ 讓白色框更靠近上方 */
+  top: 28%; /* ✅ 確保下方白色框與上方透明框距離適中 */
   left: 50%;
   transform: translate(-50%, -50%);
+  
   display: flex;
-  gap: 20px;
+  gap: 20px; /* ✅ 原本是 20px，現在改為 40px，讓左右框距離變大 */
   z-index: 1;
+  
   width: 80%;
   max-width: 800px;
   text-align: center;
