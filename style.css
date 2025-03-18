@@ -127,7 +127,7 @@ html, body {
 .two-col-boxes .box {
   flex: none;
   width: 300px;        /* 你想要的固定寬度 */
-  height: 150px;       /* 你想要的固定高度 */
+  height: 100px;       /* 你想要的固定高度 */
   background: #fff; /* ✅ 改為純白 */
   color: #888;
   border-radius: 25px;
