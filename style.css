@@ -22,7 +22,7 @@ html, body {
 /* 4) 讓文字浮在圖片上方 */
 .overlay-text {
   position: absolute;               /* 絕對定位在 .background-container 裡面 */
-  top: 30%;                         /* 文字在視窗大約 30% 處，可依需求調整 */
+  top: 20%;                         /* 文字在視窗大約 30% 處，可依需求調整 */
   left: 50%;
   transform: translate(-50%, -50%);
   
