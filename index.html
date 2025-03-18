@@ -11,14 +11,17 @@
             box-sizing: border-box;
         }
         body {
-            background: url('background.png') no-repeat center center;
+            background: url('background.png') no-repeat top center;
             background-size: cover;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             font-family: Arial, sans-serif;
+        }
+        .wrapper {
+            min-height: 100vh;
         }
         .content {
             background: rgba(255, 255, 255, 0.8);
@@ -36,6 +39,15 @@
     </style>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="content">
+            <h1>歡迎來到我的網頁</h1>
+            <p>這是一個適用於手機與電腦的背景圖片網頁</p>
+        </div>
+    </div>
+</body>
+</html>
+
     <div class="content">
         <h1>歡迎來到我的網頁</h1>
         <p>這是一個適用於手機與電腦的背景圖片網頁</p>
