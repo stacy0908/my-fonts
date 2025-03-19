@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'KosefontP-JP';
+    src: url('KosefontP-JP.woff2') format('woff2'), /* 確保字體格式 */
+         url('KosefontP-JP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.two-col-boxes .box:nth-child(1) .sub-text {
+    font-family: 'KosefontP-JP', sans-serif;
+}
+
 /* 1) 重置 */
 html, body {
   margin: 0;
