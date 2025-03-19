@@ -1,22 +1,12 @@
 @font-face {
     font-family: 'KosefontP-JP';
     src: url('KosefontP-JP.ttf') format('truetype'), /* 確保字體格式 */
+    font-weight: normal;
+    font-style: normal;
 }
 
 .two-col-boxes .box:nth-child(1) .sub-text {
     font-family: 'KosefontP-JP', sans-serif;
-}
-
-/* 確保「字型1」的 main-text（預覽字型）使用 KosefontP-JP */
-.font-kosefont {
-    font-family: 'KosefontP-JP', sans-serif !important;
-}
-
-/* 如果無法支援，改變字體顏色 */
-.unsupported-font {
-    font-family: sans-serif !important; /* 改回系統字體 */
-    color: red !important; /* 讓文字變紅色 */
-    font-weight: bold;
 }
 
 /* 1) 重置 */
