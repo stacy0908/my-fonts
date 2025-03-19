@@ -112,7 +112,12 @@ html, body {
 }
 
 .sub-text {
-  font-size: 20px;        /* 下方文字較小 */
-  color: orange;
-  margin-top: 10px;       /* 與上方文字的距離 */
+    font-size: 20px; /* 字體大小 */
+    font-weight: bold; /* 加粗 */
+    color: orange; /* 改為橘色 */
+    background-color: white; /* 背景顏色改為白色 */
+    padding: 5px 10px; /* 讓背景有適當的留白 */
+    border-radius: 5px; /* 圓角設計，讓背景看起來更柔和 */
+    margin-top: 10px; /* 與上方文字的間距 */
+    display: inline-block; /* 讓背景只包住文字大小 */
 }
