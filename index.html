@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>完整背景圖片</title>
+  <!-- 連結你的外部 CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,41 +14,105 @@
     <!-- 上方浮在圖片之上的白色半透明框 -->
     <div class="overlay-text">
       <h1>請輸入您寶貝的名字</h1>
-     <input type="text" id="nameInput" placeholder="在此輸入名字...">
+      <input type="text" id="nameInput" placeholder="在此輸入名字...">
     </div>
 
-    <!-- 下方 2 欄，並在每欄放 2 個 "白色透明框" -->
+    <!-- 下方 2 欄，並在每欄放 6 個 "白色透明框" -->
     <div class="two-col-boxes">
-      <!-- 左欄：上下各一個框 -->
+      <!-- 左欄：6 個框 -->
       <div class="column">
-        <div class="box"><p class="preview-text">預覽字型</p></div>
-        <div class="box"><p class="preview-text">預覽字型</p></div>
-        <div class="box"><p class="preview-text">預覽字型</p></div>
-        <div class="box"><p class="preview-text">預覽字型</p></div>
-        <div class="box"><p class="preview-text">預覽字型</p></div>
-        <div class="box"><p class="preview-text">預覽字型</p></div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
+        </div>
       </div>
 
       <!-- 右欄：6 個框 -->
       <div class="column">
-        <div class="box"><p class="preview-text">預覽字型</p></div>
-        <div class="box"><p class="preview-text">預覽字型</p></div>
-        <div class="box"><p class="preview-text">預覽字型</p></div>
-        <div class="box"><p class="preview-text">預覽字型</p></div>
-        <div class="box"><p class="preview-text">預覽字型</p></div>
-        <div class="box"><p class="preview-text">預覽字型</p></div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  
-    <!-- JavaScript -->
+
+  <!-- JavaScript -->
   <script>
+    // 當使用者輸入文字時，更新上方那行 (main-text) 的內容
     document.getElementById("nameInput").addEventListener("input", function() {
-      let text = this.value || "預覽字型"; // 當輸入框為空時，顯示預設文字
-      document.querySelectorAll(".preview-text").forEach(element => {
-        element.textContent = text;
+      const typedText = this.value.trim() || "預覽字型";
+      
+      // 選取所有 .main-text 元素 (上面那行)
+      document.querySelectorAll(".main-text").forEach(elem => {
+        elem.textContent = typedText;
       });
     });
   </script>
 </body>
 </html>
+
