@@ -112,7 +112,7 @@ html, body {
 }
 
 .sub-text {
-  font-size: 18px;        /* 下方文字較小 */
-  color: #666;
+  font-size: 20px;        /* 下方文字較小 */
+  color: orange;
   margin-top: 10px;       /* 與上方文字的距離 */
 }
