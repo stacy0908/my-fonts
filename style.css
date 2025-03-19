@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'KosefontP-JP';
-    src: url('KosefontP-JP.woff2') format('woff2'), /* 確保字體格式 */
-         url('KosefontP-JP.woff') format('woff');
+    src: url('KosefontP-JP.tff') format('tff2'), /* 確保字體格式 */
+         url('KosefontP-JP.tff') format('tff');
     font-weight: normal;
     font-style: normal;
 }
