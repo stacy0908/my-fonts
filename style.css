@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'KosefontP-JP';
-    src: url('KosefontP-JP.ttf') format('truetype'), /* 確保字體格式 */
+    src: url('KosefontP-JP.tff') format('tff2'), /* 確保字體格式 */
+         url('KosefontP-JP.tff') format('tff');
     font-weight: normal;
     font-style: normal;
 }
@@ -83,10 +84,6 @@ html, body {
   gap: 20px; /* 上/下框之間的距離，可自行調整 */
 }
 
-.two-col-boxes .column:first-child .box:first-child .sub-text {
-    font-family: 'KosefontP-JP', sans-serif !important;
-}
-
 /* ★ 每個白色透明框的外觀 (固定尺寸、半透明、陰影) */
 .two-col-boxes .box {
     flex: none;
@@ -138,18 +135,12 @@ html, body {
   font-weight: bold;
   color: rgba(0, 0, 0, 0.5); /* 讓顏色變淡 (50% 透明度的黑色) */
   transition: color 0.3s ease; /* 讓顏色變化更流暢 */
-  margin-top: 14px; /* 增加上邊距，讓文字下移 */
+  margin-top: 10px; /* 增加上邊距，讓文字下移 */
 }
 
 .sub-text {
     font-size: 20px; /* 調大字型 */
     font-weight: bold; /* 加粗 */
     color: orange;
-    margin-top: 36px; /* 與上方文字的距離 */
-}
-
-.unsupported-font {
-    font-family: sans-serif !important; /* 改回系統字體 */
-    color: red !important; /* 讓提示字變紅色 */
-    font-weight: bold;
+    margin-top: 28px; /* 與上方文字的距離 */
 }
