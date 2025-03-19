@@ -39,5 +39,14 @@
       </div>
     </div>
   </div>
+    <!-- JavaScript -->
+  <script>
+    document.getElementById("nameInput").addEventListener("input", function() {
+      let text = this.value || "預覽字型"; // 當輸入框為空時，顯示預設文字
+      document.querySelectorAll(".preview-text").forEach(element => {
+        element.textContent = text;
+      });
+    });
+  </script>
 </body>
 </html>
