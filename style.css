@@ -74,17 +74,18 @@ html, body {
 
 /* ★ 每個白色透明框的外觀 (固定尺寸、半透明、陰影) */
 .two-col-boxes .box {
-  flex: none;
-  width: 130px;
-  height: 100px;
-  background: rgba(255, 255, 255, 0.5);
-  color: #666;
-  border-radius: 25px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  display: flex;           /* 文字居中 */
-  justify-content: center;
-  align-items: center;
+    flex: none;
+    width: 130px; /* 框的寬度 */
+    height: 100px; /* 框的高度 */
+    background: linear-gradient(to bottom, transparent 80%, white 20%); /* 80% 透明，底部 20% 白色 */
+    border: 5px solid white; /* 白色邊框 */
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 陰影讓相片框更立體 */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* 讓內部元素能正確定位 */
 }
 
 /* 文字大小/顏色可依需求 */
@@ -112,6 +113,6 @@ html, body {
 
 .sub-text {
   font-size: 20px;        /* 下方文字較小 */
-  color: deep orange;
+  color: orange;
   margin-top: 10px;       /* 與上方文字的距離 */
 }
