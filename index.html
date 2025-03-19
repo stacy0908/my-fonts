@@ -4,26 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>完整背景圖片</title>
-  <!-- 連結你的外部 CSS -->
+  <!-- 連結外部 CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="background-container">
     <img src="background.png" alt="背景圖片" />
 
-    <!-- 上方浮在圖片之上的白色半透明框 -->
+    <!-- 上方輸入框 -->
     <div class="overlay-text">
       <h1>您寶貝的名字</h1>
       <input type="text" id="nameInput" placeholder="請在此輸入....">
     </div>
 
-    <!-- 下方 2 欄，並在每欄放 6 個 "白色透明框" -->
+    <!-- 下方 2 欄，包含 12 個字型框 -->
     <div class="two-col-boxes">
       <!-- 左欄：6 個框 -->
       <div class="column">
-        <div class="box"> <!-- 第一個框，套用 KosefontP-JP -->
+        <div class="box"> <!-- ✅ 第一個框（字型1） -->
           <p class="preview-text">
-            <span class="main-text">預覽字型</span>
+            <span class="main-text font-kosefont">預覽字型</span>
             <span class="sub-text">•字型1</span>
           </p>
         </div>
@@ -112,7 +112,7 @@
       });
 
       // 更新「字型1」是否支援該字
-      const firstSubText = document.querySelector(".column:first-child .box:first-child .sub-text");
+      const firstMainText = document.querySelector(".column:first-child .box:first-child .main-text");
       const testCanvas = document.createElement("canvas");
       const ctx = testCanvas.getContext("2d");
       ctx.font = "20px KosefontP-JP"; // 測試 KosefontP-JP
@@ -130,13 +130,14 @@
       }
 
       if (!allSupported) {
-        firstSubText.textContent = "無法支援";
-        firstSubText.classList.add("unsupported-font");
+        firstMainText.textContent = "無法支援";
+        firstMainText.classList.add("unsupported-font");
       } else {
-        firstSubText.textContent = "•字型1";
-        firstSubText.classList.remove("unsupported-font");
+        firstMainText.textContent = typedText;
+        firstMainText.classList.remove("unsupported-font");
       }
     });
   </script>
 </body>
 </html>
+
