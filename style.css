@@ -55,7 +55,7 @@ html, body {
 .two-col-boxes {
   position: absolute;
   top: 32%;            /* 下方框與上方透明框的距離 */
-  left: 45%;           /* 往左些，可依需求調整 */
+  left: 46%;           /* 往左些，可依需求調整 */
   transform: translate(-50%, -48%);
   display: flex;       /* 左欄、右欄 並排 */
   gap: 30px;           /* 欄之間的距離 */
@@ -92,5 +92,5 @@ html, body {
 .two-col-boxes .box p {
   font-size: 20px;
   font-weight: bold;
-  color: #333;
+  color: #666;
 }
