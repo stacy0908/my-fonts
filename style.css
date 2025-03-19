@@ -144,3 +144,9 @@ html, body {
     color: orange;
     margin-top: 28px; /* 與上方文字的距離 */
 }
+
+.unsupported-font {
+    font-family: sans-serif !important; /* 改回系統字體 */
+    color: red !important; /* 讓提示字變紅色 */
+    font-weight: bold;
+}
