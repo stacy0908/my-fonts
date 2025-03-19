@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'KosefontP-JP';
     src: url('KosefontP-JP.ttf') format('truetype'), /* 確保字體格式 */
-    font-weight: normal;
-    font-style: normal;
 }
 
 .two-col-boxes .box:nth-child(1) .sub-text {
