@@ -21,7 +21,7 @@
     <div class="two-col-boxes">
       <!-- 左欄：6 個框 -->
       <div class="column">
-        <div class="box">
+        <div class="box"> <!-- 第一個框，套用 KosefontP-JP -->
           <p class="preview-text">
             <span class="main-text">預覽字型</span>
             <span class="sub-text">•字型1</span>
@@ -103,16 +103,40 @@
 
   <!-- JavaScript -->
   <script>
-    // 當使用者輸入文字時，更新上方那行 (main-text) 的內容
     document.getElementById("nameInput").addEventListener("input", function() {
       const typedText = this.value.trim() || "預覽字型";
-      
-      // 選取所有 .main-text 元素 (上面那行)
+
+      // 更新所有框的 main-text（上方文字）
       document.querySelectorAll(".main-text").forEach(elem => {
         elem.textContent = typedText;
       });
+
+      // 更新「字型1」是否支援該字
+      const firstSubText = document.querySelector(".column:first-child .box:first-child .sub-text");
+      const testCanvas = document.createElement("canvas");
+      const ctx = testCanvas.getContext("2d");
+      ctx.font = "20px KosefontP-JP"; // 測試 KosefontP-JP
+
+      let allSupported = true;
+      for (const char of typedText) {
+        const width1 = ctx.measureText(char).width;
+        ctx.font = "20px sans-serif"; // 改回系統字體測試
+        const width2 = ctx.measureText(char).width;
+
+        if (width1 === width2) {
+          allSupported = false;
+          break;
+        }
+      }
+
+      if (!allSupported) {
+        firstSubText.textContent = "無法支援";
+        firstSubText.classList.add("unsupported-font");
+      } else {
+        firstSubText.textContent = "•字型1";
+        firstSubText.classList.remove("unsupported-font");
+      }
     });
   </script>
 </body>
 </html>
-
