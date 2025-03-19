@@ -73,20 +73,7 @@ html, body {
 }
 
 /* ★ 每個白色透明框的外觀 (固定尺寸、半透明、陰影) */
-.two-col-boxes .box {
-  flex: none;
-  width: 130px;
-  height: 100px;
-  background: rgba(255, 255, 255, 0.5);
-  color: #666;
-  border-radius: 25px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-
-  display: flex;           /* 文字居中 */
-  justify-content: center;
-  align-items: center;
-}
+ background: transparent; /* 內部透明 */
 
 /* 文字大小/顏色可依需求 */
 .two-col-boxes .box p {
@@ -95,14 +82,16 @@ html, body {
   color: #666;
 }
 
+/* 讓文字保持可見 */
 .preview-text {
-  display: flex;
-  flex-direction: column; /* 讓文字垂直排列 */
-  align-items: center;    /* 水平置中 */
-  justify-content: center;/* 垂直置中 */
-  text-align: center;     /* 文字置中 */
-  height: 100%;           /* 讓 p 撐滿父容器 (box) */
-  margin: 0;              /* 移除預設的段落外距，如需要 */
+    font-size: 18px; /* 調整字體大小 */
+    font-weight: bold;
+    color: orange; /* 文字顏色 */
+    background: white; /* 讓文字本身有白色底 */
+    padding: 5px 10px; /* 讓白色底稍微包住文字 */
+    border-radius: 5px; /* 讓背景有圓角 */
+    text-align: center;
+    display: inline-block;
 }
 
 .main-text {
