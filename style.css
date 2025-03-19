@@ -54,7 +54,7 @@ html, body {
 /* ★ 下方 2 欄 (left / right) 採絕對定位 */
 .two-col-boxes {
   position: absolute;
-  top: 54%;            /* 下方框與上方透明框的距離 */
+  top: 52%;            /* 下方框與上方透明框的距離 */
   left: 46%;           /* 往左些，可依需求調整 */
   transform: translate(-50%, -48%);
   display: flex;       /* 左欄、右欄 並排 */
@@ -106,13 +106,21 @@ html, body {
 }
 
 .main-text {
-  font-size: 20px;        /* 上方文字較大 */
+  font-size: 20px;
   font-weight: bold;
   color: #333;
 }
 
 .sub-text {
-  font-size: 20px;        /* 下方文字較小 */
-  color: orange;
-  margin-top: 10px;       /* 與上方文字的距離 */
+    font-size: 20px; /* 字體大小 */
+    font-weight: bold; /* 加粗 */
+    color: orange; /* 文字顏色 */
+    background: white; /* 背景為純白 */
+    padding: 5px 10px;
+    border-radius: 5px; /* 圓角 */
+    text-align: center;
+    position: absolute; /* 讓它固定到白色區 */
+    bottom: 10%; /* 讓字型標示位於底部白色區域的中央 */
+    left: 50%;
+    transform: translateX(-50%); /* 確保水平方向完全置中 */
 }
