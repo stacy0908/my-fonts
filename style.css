@@ -88,6 +88,19 @@ html, body {
     position: relative; /* 讓內部元素能正確定位 */
 }
 
+/* 左上角的圓洞裝飾 */
+.two-col-boxes .box::before {
+    content: "";
+    position: absolute;
+    top: 5px; /* 距離上邊緣 */
+    left: 5px; /* 距離左邊緣 */
+    width: 15px; /* 圓洞的大小 */
+    height: 15px; /* 圓洞的大小 */
+    background: white; /* 圓洞顏色 */
+    border-radius: 50%; /* 讓它變成圓形 */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); /* 讓圓洞有凹陷感 */
+}
+
 /* 文字大小/顏色可依需求 */
 .two-col-boxes .box p {
   font-size: 20px;
