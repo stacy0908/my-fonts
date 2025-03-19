@@ -134,14 +134,14 @@ html, body {
   font-weight: bold;
   color: rgba(0, 0, 0, 0.5); /* 讓顏色變淡 (50% 透明度的黑色) */
   transition: color 0.3s ease; /* 讓顏色變化更流暢 */
-  margin-top: 10px; /* 增加上邊距，讓文字下移 */
+  margin-top: 14px; /* 增加上邊距，讓文字下移 */
 }
 
 .sub-text {
     font-size: 20px; /* 調大字型 */
     font-weight: bold; /* 加粗 */
     color: orange;
-    margin-top: 32px; /* 與上方文字的距離 */
+    margin-top: 36px; /* 與上方文字的距離 */
 }
 
 .unsupported-font {
