@@ -65,6 +65,13 @@ html, body {
   text-align: center;
 }
 
+/* ★ 每欄上下 2 框 → 用 flex column，並加 gap 控制上下距離 */
+.two-col-boxes .column {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; /* 上/下框之間的距離，可自行調整 */
+}
+
 /* ★ 每個白色透明框的外觀 (固定尺寸、半透明、陰影) */
 .two-col-boxes .box {
   flex: none;
