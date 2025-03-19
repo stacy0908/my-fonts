@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'KosefontP-JP';
-    src: url('KosefontP-JP.tff') format('truetype'), /* 確保字體格式 */
+    src: url('KosefontP-JP.ttf') format('truetype'), /* 確保字體格式 */
     font-weight: normal;
     font-style: normal;
 }
@@ -81,6 +81,10 @@ html, body {
   display: flex;
   flex-direction: column; 
   gap: 20px; /* 上/下框之間的距離，可自行調整 */
+}
+
+.two-col-boxes .column:first-child .box:first-child .sub-text {
+    font-family: 'KosefontP-JP', sans-serif !important;
 }
 
 /* ★ 每個白色透明框的外觀 (固定尺寸、半透明、陰影) */
