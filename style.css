@@ -5,10 +5,6 @@
     font-style: normal;
 }
 
-.two-col-boxes .box:nth-child(1) .sub-text {
-    font-family: 'KosefontP-JP', sans-serif;
-}
-
 /* 1) 重置 */
 html, body {
   margin: 0;
@@ -126,6 +122,10 @@ html, body {
   text-align: center;     /* 文字置中 */
   height: 100%;           /* 讓 p 撐滿父容器 (box) */
   margin: 0;              /* 移除預設的段落外距，如需要 */
+}
+
+.preview-text .main-text {
+  font-family: 'KosefontP-JP', sans-serif;
 }
 
 .main-text {
