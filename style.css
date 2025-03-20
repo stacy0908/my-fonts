@@ -161,14 +161,10 @@ html, body {
 }
 
 .sub-text {
-    font-size: 20px; /* 保持字體大小 */
+    font-size: 20px; /* 調大字型 */
     font-weight: bold; /* 加粗 */
-    color: #6e90ff; /* 原本的藍色 */
-    margin-top: auto; /* 自動調整位置 */
-    margin-bottom: 15px; /* 確保距離純白色區域有一定距離 */
-    text-align: center; /* 水平置中 */
-    width: 100%; /* 讓它撐滿 box */
-}
+    color: #6e90ff;
+    margin-top: 37px; /* 與上方文字的距離 */
 
 .placeholder-text {
   font-size: 16px; /* 讓「預覽字型」這 4 個字變小 */
