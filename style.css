@@ -142,3 +142,9 @@ html, body {
     color: #6e90ff;
     margin-top: 37px; /* 與上方文字的距離 */
 }
+
+.placeholder-text {
+  font-size: 16px; /* 讓「預覽字型」這 4 個字變小 */
+  opacity: 0.7; /* 讓它稍微淡一些，和輸入文字區分 */
+}
+
