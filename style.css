@@ -140,6 +140,6 @@ html, body {
 .sub-text {
     font-size: 20px; /* 調大字型 */
     font-weight: bold; /* 加粗 */
-    color: blue;
-    margin-top: 34px; /* 與上方文字的距離 */
+    color: #6495ED;
+    margin-top: 40px; /* 與上方文字的距離 */
 }
