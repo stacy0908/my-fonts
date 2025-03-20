@@ -13,8 +13,8 @@
 }
 
 @font-face {
-  font-family: 'ToneOZ-Zhuyin-Kai-Traditional';
-  src: url('ToneOZ-Zhuyin-Kai-Traditional.ttf') format('truetype'); /* 確保字體格式 */
+  font-family: 'BpmfZihiKaiStd-Regular';
+  src: url('BpmfZihiKaiStd-Regular') format('truetype'); /* 確保字體格式 */
   font-weight: normal;
   font-style: normal;
 }
@@ -147,9 +147,9 @@ html, body {
   font-family: 'BpmfGenSenRounded-M', sans-serif;
 }
 
-/* 讓「字型11」的框內 main-text 改用 ToneOZ-Zhuyin-Kai-Traditional */
+/* 讓「字型11」的框內 main-text 改用 BpmfZihiKaiStd-Regular */
 .two-col-boxes .column:last-child .box:nth-last-child(2) .main-text {
-  font-family: 'ToneOZ-Zhuyin-Kai-Traditional', sans-serif;
+  font-family: 'BpmfZihiKaiStd-Regular', sans-serif;
 }
 
 .main-text {
