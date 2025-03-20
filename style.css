@@ -130,7 +130,7 @@ html, body {
 }
 
 .main-text {
-  font-size: 26px;
+  font-size: 23px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.5); /* 讓顏色變淡 (50% 透明度的黑色) */
   transition: color 0.3s ease; /* 讓顏色變化更流暢 */
@@ -140,6 +140,6 @@ html, body {
 .sub-text {
     font-size: 20px; /* 調大字型 */
     font-weight: bold; /* 加粗 */
-    color: orange;
+    color: blue;
     margin-top: 34px; /* 與上方文字的距離 */
 }
