@@ -135,6 +135,11 @@ html, body {
   font-family: 'KosefontP-JP', sans-serif;
 }
 
+/* 讓「字型12」的框內 main-text 改用 BpmfGenSenRounded-M */
+.two-col-boxes .column:last-child .box:last-child .main-text {
+  font-family: 'BpmfGenSenRounded-M', sans-serif;
+}
+
 .main-text {
   font-size: 26px;
   font-weight: normal;
