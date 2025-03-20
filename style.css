@@ -147,6 +147,11 @@ html, body {
   font-family: 'BpmfGenSenRounded-M', sans-serif;
 }
 
+/* 讓「字型11」的框內 main-text 改用 ToneOZ-Zhuyin-Kai-Traditional */
+.two-col-boxes .column:last-child .box:nth-last-child(2) .main-text {
+  font-family: 'ToneOZ-Zhuyin-Kai-Traditional', sans-serif;
+}
+
 .main-text {
   font-size: 26px;
   font-weight: normal;
