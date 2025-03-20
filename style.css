@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: 'BpmfZihiKaiStd-Regular';
-  src: url('BpmfZihiKaiStd-Regular') format('truetype'); /* 確保字體格式 */
+  src: url('BpmfZihiKaiStd-Regular.ttf') format('truetype'); /* 確保字體格式 */
   font-weight: normal;
   font-style: normal;
 }
