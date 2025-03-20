@@ -148,7 +148,7 @@ html, body {
 }
 
 /* 讓「字型11」的框內 main-text 改用 BpmfZihiKaiStd-Regular */
-.two-col-boxes .column:last-child .box:nth-last-child(2) .main-text {
+.two-col-boxes .column:first-child .box:nth-last-child(2) .main-text {
   font-family: 'BpmfZihiKaiStd-Regular', sans-serif;
 }
 
@@ -167,7 +167,7 @@ html, body {
     margin-top: 37px; /* 與上方文字的距離 */
 
 .placeholder-text {
-  font-size: 16px; /* 讓「預覽字型」這 4 個字變小 */
+  font-size: 12px; /* 讓「預覽字型」這 4 個字變小 */
   opacity: 0.7; /* 讓它稍微淡一些，和輸入文字區分 */
 }
 
