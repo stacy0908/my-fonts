@@ -130,7 +130,7 @@ html, body {
 
 .main-text {
   font-size: 26px;
-  font-weight: bold;
+  font-weight: normal;
   color: rgba(0, 0, 0, 0.5); /* 讓顏色變淡 (50% 透明度的黑色) */
   transition: color 0.3s ease; /* 讓顏色變化更流暢 */
   margin-top: 25px; /* 增加上邊距，讓文字下移 */
