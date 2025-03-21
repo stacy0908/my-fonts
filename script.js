@@ -1,6 +1,6 @@
 <script>
   // 取得輸入框
-  const inputName = document.getElementById("inputName");
+  const inputName = document.getElementById("nameInput");
 
   inputName.addEventListener("input", function () {
     const typedValue = inputName.value.trim(); // 取得使用者輸入的內容
