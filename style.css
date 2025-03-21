@@ -151,7 +151,7 @@ html, body {
 
 /* 讓「字型3」的框內 main-text 使用 PopGothicCjkTc */
 .two-col-boxes .column:first-child .box:nth-child(2) .main-text {
-  font-family: 'PopGothicCjkTc-Regular', sans-serif;
+  font-family: 'PopGothicCjkTc-Regular', sans-serif; font-size: 30px;
 }
 
 /* 讓「字型12」的框內 main-text 改用 BpmfGenSenRounded-M */
