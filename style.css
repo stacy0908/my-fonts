@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'KosefontP-JP';
-    src: url('KosefontP-JP.ttf') format('truetype'); 
+    font-family: 'LXGWMarkerGothic-Regular';
+    src: url('LXGWMarkerGothic-Regular.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -146,7 +146,7 @@ html, body {
 }
 
 .preview-text .main-text {
-  font-family: 'KosefontP-JP', sans-serif;
+  font-family: 'LXGWMarkerGothic-Regular', sans-serif;
 }
 
 /* 讓「字型3」的框內 main-text 使用 PopGothicCjkTc */
