@@ -148,7 +148,7 @@ html, body {
 }
 
 /* 讓「字型11」的框內 main-text 改用 BpmfZihiKaiStd-Regular */
-.two-col-boxes .column:first-child .box:nth-last-child(2) .main-text {
+.two-col-boxes .column:first-child .box:nth-last-child .main-text {
   font-family: 'BpmfZihiKaiStd-Regular', sans-serif;
 }
 
