@@ -172,6 +172,10 @@ html, body {
   color: normal; /* 讓顏色變淡 (50% 透明度的黑色) */
   transition: color 0.3s ease; /* 讓顏色變化更流暢 */
   margin-top: 25px; /* 增加上邊距，讓文字下移 */
+.input-text {
+  color: #000; /* 純黑色文字 */
+  font-size: 23px; /* 保持與原本 main-text 相同的字體大小 */
+  opacity: 1; /* 確保完全不透明 */
 }
 
 .sub-text {
