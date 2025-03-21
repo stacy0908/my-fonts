@@ -13,6 +13,12 @@
 }
 
 @font-face {
+    font-family: 'PopGothicCjkTc-Regular';
+    src: url('PopGothicCjkTc-Regular.ttf') format('truetype'), /* 確保字體格式 */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
   font-family: 'BpmfZihiKaiStd-Regular';
   src: url('BpmfZihiKaiStd-Regular.ttf') format('truetype'); /* 確保字體格式 */
   font-weight: normal;
@@ -140,6 +146,11 @@ html, body {
 
 .preview-text .main-text {
   font-family: 'KosefontP-JP', sans-serif;
+}
+
+/* 讓「字型3」的框內 main-text 改用 PopGothicCjkTc-Regular */
+.two-col-boxes .column:first-child .box:first-child(2) .main-text {
+  font-family: 'PopGothicCjkTc-Regular', sans-serif;
 }
 
 /* 讓「字型12」的框內 main-text 改用 BpmfGenSenRounded-M */
