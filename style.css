@@ -165,6 +165,7 @@ html, body {
     font-weight: bold; /* 加粗 */
     color: #6e90ff;
     margin-top: 37px; /* 與上方文字的距離 */
+}
 
 .placeholder-text {
   font-size: 12px; /* 讓「預覽字型」這 4 個字變小 */
