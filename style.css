@@ -137,12 +137,20 @@ html, body {
 
 .preview-text {
   display: flex;
-  flex-direction: column; /* 讓文字垂直排列 */
-  align-items: center;    /* 水平置中 */
-  justify-content: center;/* 垂直置中 */
-  text-align: center;     /* 文字置中 */
-  height: 100%;           /* 讓 p 撐滿父容器 (box) */
-  margin: 0;              /* 移除預設的段落外距，如需要 */
+  flex-direction: column;
+  justify-content: space-between; /* 上下分散 */
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0; /* 預留上下空間 */
+}
+
+.main-text {
+  margin: 0;
+}
+
+.sub-text {
+  margin: 0;
 }
 
 .preview-text .main-text {
