@@ -97,7 +97,7 @@ html, body {
 .two-col-boxes .column {
   display: flex;
   flex-direction: column; 
-  gap: 20px; /* 上/下框之間的距離，可自行調整 */
+  gap: 22px; /* 上/下框之間的距離，可自行調整 */
 }
 
 .two-col-boxes .box {
@@ -165,7 +165,7 @@ html, body {
 }
 
 .main-text {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: normal;
   color: black; /* 讓顏色變淡 (50% 透明度的黑色) */
   transition: color 0.3s ease; /* 讓顏色變化更流暢 */
