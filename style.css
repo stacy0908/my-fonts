@@ -149,7 +149,7 @@ html, body {
 }
 
 /* 讓「字型3」的框內 main-text 改用 PopGothicCjkTc-Regular */
-.two-col-boxes .column:first-child .box:first-child(2) .main-text {
+.two-col-boxes .column:first-child .box:nth-child(2) .main-text {
   font-family: 'PopGothicCjkTc-Regular', sans-serif;
 }
 
