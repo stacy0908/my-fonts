@@ -165,9 +165,9 @@ html, body {
 }
 
 .main-text {
-  font-size: 23px;
+  font-size: 25px;
   font-weight: normal;
-  color: normal; /* 讓顏色變淡 (50% 透明度的黑色) */
+  color: black; /* 讓顏色變淡 (50% 透明度的黑色) */
   transition: color 0.3s ease; /* 讓顏色變化更流暢 */
   margin-top: 25px; /* 增加上邊距，讓文字下移 */
 }
