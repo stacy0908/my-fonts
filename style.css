@@ -62,6 +62,13 @@
 }
 
 @font-face {
+  font-family: 'CEFFontsCJK-Regular';
+  src: url('CEFFontsCJK-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'edukai-5.0';
   src: url('edukai-5.0.ttf') format('truetype');
   font-weight: normal;
@@ -241,6 +248,11 @@ html, body {
 /* 讓「字型8」的框內 main-text 使用 宅在家自動筆20231015*/
 .two-col-boxes .column:last-child .box:nth-child(4) .main-text {
   font-family: '宅在家自動筆20231015', sans-serif;
+}
+
+/* 讓「字型10」的框內 main-text 使用 CEFFontsCJK-Regular*/
+.two-col-boxes .column:last-child .box:nth-child(5) .main-text {
+  font-family: 'CEFFontsCJK-Regular', sans-serif;
 }
 
 /* 讓「字型12」的框內 main-text 改用 BpmfGenSenRounded-M */
