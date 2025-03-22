@@ -33,6 +33,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'edukai-5.0';
+  src: url('edukai-5.0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* 1) 重置 */
 html, body {
   margin: 0;
@@ -164,6 +171,11 @@ html, body {
 /* 讓「字型5」的框內 main-text 使用 wt071 */
 .two-col-boxes .column:first-child .box:nth-child(3) .main-text {
   font-family: 'wt071', sans-serif;
+}
+
+/* 讓「字型7」的框內 main-text 使用edukai-5.0 */
+.two-col-boxes .column:first-child .box:nth-child(4) .main-text {
+  font-family: 'edukai-5.0', sans-serif;
 }
 
 /* 讓「字型12」的框內 main-text 改用 BpmfGenSenRounded-M */
