@@ -176,7 +176,7 @@ html, body {
     font-size: 20px; /* 調大字型 */
     font-weight: bold; /* 加粗 */
     color: #6e90ff;
-    margin-top: 37px; /* 與上方文字的距離 */
+    margin-top: 32px; /* 與上方文字的距離 */
 }
 
 .placeholder-text {
