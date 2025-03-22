@@ -34,8 +34,8 @@
 }
 
 @font-face {
-  font-family: 'wt064';
-  src: url('wt064.ttf') format('truetype');
+  font-family: 'wt021';
+  src: url('wt021.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -240,9 +240,9 @@ html, body {
   font-family: 'KosefontP-JP', sans-serif;
 }
 
-/* 讓「字型6」的框內 main-text 使用 wt064*/
+/* 讓「字型6」的框內 main-text 使用 wt021*/
 .two-col-boxes .column:last-child .box:nth-child(3) .main-text {
-  font-family: 'wt064', sans-serif;
+  font-family: 'wt021', sans-serif;
 }
 
 /* 讓「字型8」的框內 main-text 使用 宅在家自動筆20231015*/
