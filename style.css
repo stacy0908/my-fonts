@@ -55,6 +55,13 @@
 }
 
 @font-face {
+  font-family: '宅在家自動筆20231015';
+  src: url('宅在家自動筆20231015.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'edukai-5.0';
   src: url('edukai-5.0.ttf') format('truetype');
   font-weight: normal;
@@ -229,6 +236,11 @@ html, body {
 /* 讓「字型6」的框內 main-text 使用 wt064*/
 .two-col-boxes .column:last-child .box:nth-child(3) .main-text {
   font-family: 'wt064', sans-serif;
+}
+
+/* 讓「字型8」的框內 main-text 使用 宅在家自動筆20231015*/
+.two-col-boxes .column:last-child .box:nth-child(4) .main-text {
+  font-family: '宅在家自動筆20231015', sans-serif;
 }
 
 /* 讓「字型12」的框內 main-text 改用 BpmfGenSenRounded-M */
