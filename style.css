@@ -161,7 +161,7 @@ html, body {
 
 /* 讓「字型11」的框內 main-text 改用 BpmfZihiKaiStd-Regular */
 .two-col-boxes .column:first-child .box:last-child .main-text {
-  font-family: 'BpmfZihiKaiStd-Regular', sans-serif;font-weight: font-size: 20px;
+  font-family: 'BpmfZihiKaiStd-Regular', sans-serif;font-weight: font-size: 19px;
 }
 
 .main-text {
