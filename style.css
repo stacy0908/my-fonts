@@ -156,7 +156,7 @@ html, body {
 
 /* 讓「字型12」的框內 main-text 改用 BpmfGenSenRounded-M */
 .two-col-boxes .column:last-child .box:last-child .main-text {
-  font-family: 'BpmfGenSenRounded-M', sans-serif;font-size: 21px;
+  font-family: 'BpmfGenSenRounded-M', sans-serif;font-size: 21px;margin-top: 30px;
 }
 
 /* 讓「字型11」的框內 main-text 改用 BpmfZihiKaiStd-Regular */
