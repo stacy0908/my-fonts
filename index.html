@@ -1,85 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <title>Font Preview Example</title>
-  <!-- 連結到你優化後的 CSS -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>完整背景圖片</title>
+  <!-- 連結你的外部 CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- 背景容器 -->
   <div class="background-container">
-    <!-- 你的背景圖，鋪滿寬度 -->
-    <img src="path-to-your-image.jpg" alt="background">
+    <img src="background.png" alt="背景圖片" />
 
-    <!-- 上方透明白框 -->
+    <!-- 上方浮在圖片之上的白色半透明框 -->
     <div class="overlay-text">
-      <h1>Overlay Title</h1>
-      <input type="text" placeholder="請輸入文字...">
+      <h1>您寶貝的名字</h1>
+      <input type="text" id="nameInput" placeholder="請在此輸入....">
     </div>
 
-    <!-- 下方 2 欄預覽框 (每欄 6 個 box) -->
+    <!-- 下方 2 欄，並在每欄放 6 個 "白色透明框" -->
     <div class="two-col-boxes">
-      <!-- 左邊欄 -->
+      <!-- 左欄：6 個框 -->
       <div class="column">
-        <!-- 字型1：LXGWMarkerGothic-Regular -->
         <div class="box">
-          <p class="preview-text font-lxgw text-md">我是字型1</p>
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型1</span>
+          </p>
         </div>
-        <!-- 字型2：PopGothicCjkTc-Regular -->
         <div class="box">
-          <p class="preview-text font-popgothic text-md">我是字型2</p>
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型3</span>
+          </p>
         </div>
-        <!-- 字型3：wt071 -->
         <div class="box">
-          <p class="preview-text font-wt071 text-md">我是字型3</p>
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型5</span>
+          </p>
         </div>
-        <!-- 字型4：edukai-5.0 -->
         <div class="box">
-          <p class="preview-text font-edukai text-md">我是字型4</p>
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型7</span>
+          </p>
         </div>
-        <!-- 字型5：NotoSansJP-VariableFont_wght -->
         <div class="box">
-          <p class="preview-text font-noto text-md">我是字型5</p>
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型9</span>
+          </p>
         </div>
-        <!-- 字型6：BpmfZihiKaiStd-Regular (加上 text-sm) -->
         <div class="box">
-          <p class="preview-text font-bpmfZ text-sm">我是字型6</p>
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型11</span>
+          </p>
         </div>
       </div>
 
-      <!-- 右邊欄 -->
+      <!-- 右欄：6 個框 -->
       <div class="column">
-        <!-- 字型7：wt006 -->
         <div class="box">
-          <p class="preview-text font-wt006 text-md">我是字型7</p>
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型2</span>
+          </p>
         </div>
-        <!-- 字型8：KosefontP-JP -->
         <div class="box">
-          <p class="preview-text font-kose text-md">我是字型8</p>
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型4</span>
+          </p>
         </div>
-        <!-- 字型9：wt064 -->
         <div class="box">
-          <p class="preview-text font-wt064 text-md">我是字型9</p>
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型6</span>
+          </p>
         </div>
-        <!-- 字型10：ZaiZaiHomePen-20231015（原「宅在家自動筆20231015」） -->
         <div class="box">
-          <p class="preview-text font-zaiZai text-md">我是字型10</p>
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型8</span>
+          </p>
         </div>
-        <!-- 字型11：CEFFontsCJK-Regular -->
         <div class="box">
-          <p class="preview-text font-cef text-md">我是字型11</p>
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型10</span>
+          </p>
         </div>
-        <!-- 字型12：BpmfGenSenRounded-M (加上 text-sm) -->
         <div class="box">
-          <p class="preview-text font-bpmfGen text-sm">我是字型12</p>
+          <p class="preview-text">
+            <span class="main-text">預覽字型</span>
+            <span class="sub-text">字型12</span>
+          </p>
         </div>
       </div>
     </div>
-    <!-- two-col-boxes 結束 -->
-
-  </div><!-- background-container 結束 -->
-
-</body>
-</html>
+  </div>
