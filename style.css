@@ -1,108 +1,180 @@
+/* ==========  字型載入 (建議改用 woff2)  ========== */
 @font-face {
-    font-family: 'LXGWMarkerGothic-Regular';
-    src: url('LXGWMarkerGothic-Regular.ttf') format('truetype'); 
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'LXGWMarkerGothic-Regular';
+  src: url('LXGWMarkerGothic-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'wt006';
-    src: url('wt006.ttf') format('truetype'); 
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'wt006';
+  src: url('wt006.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'BpmfGenSenRounded-M';
-  src: url('BpmfGenSenRounded-M.ttf') format('truetype');
+  src: url('BpmfGenSenRounded-M.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'KosefontP-JP';
-  src: url('KosefontP-JP.ttf') format('truetype');
+  src: url('KosefontP-JP.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'BpmfZihiKaiStd-Regular';
-  src: url('BpmfZihiKaiStd-Regular.ttf') format('truetype');
+  src: url('BpmfZihiKaiStd-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'wt064';
-  src: url('wt064.ttf') format('truetype');
+  src: url('wt064.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'PopGothicCjkTc-Regular';
-  src: url('PopGothicCjkTc-Regular.ttf') format('truetype');
+  src: url('PopGothicCjkTc-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'wt071';
-  src: url('wt071.ttf') format('truetype');
+  src: url('wt071.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: '宅在家自動筆20231015';
-  src: url('宅在家自動筆20231015.ttf') format('truetype');
+  font-family: 'ZaiZaiHomePen-20231015'; /* 原「宅在家自動筆20231015」改英文命名 */
+  src: url('ZaiZaiHomePen-20231015.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'CEFFontsCJK-Regular';
-  src: url('CEFFontsCJK-Regular.ttf') format('truetype');
+  src: url('CEFFontsCJK-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'edukai-5.0';
-  src: url('edukai-5.0.ttf') format('truetype');
+  src: url('edukai-5.0.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'NotoSansJP-VariableFont_wght';
-  src: url('NotoSansJP-VariableFont_wght.ttf') format('truetype');
+  src: url('NotoSansJP-VariableFont_wght.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
-/* 1) 重置 */
+/* ========== 字型對應的 class，HTML 加上相應 class 即可套用 ========== */
+.font-lxgw {
+  font-family: 'LXGWMarkerGothic-Regular', sans-serif;
+}
+
+.font-wt006 {
+  font-family: 'wt006', sans-serif;
+  font-weight: bold;
+}
+
+.font-wt064 {
+  font-family: 'wt064', sans-serif;
+}
+
+.font-wt071 {
+  font-family: 'wt071', sans-serif;
+}
+
+.font-popgothic {
+  font-family: 'PopGothicCjkTc-Regular', sans-serif;
+}
+
+.font-edukai {
+  font-family: 'edukai-5.0', sans-serif;
+}
+
+.font-noto {
+  font-family: 'NotoSansJP-VariableFont_wght', sans-serif;
+}
+
+.font-bpmfZ {
+  font-family: 'BpmfZihiKaiStd-Regular', sans-serif;
+  font-weight: bold;
+}
+
+.font-bpmfGen {
+  font-family: 'BpmfGenSenRounded-M', sans-serif;
+}
+
+.font-kose {
+  font-family: 'KosefontP-JP', sans-serif;
+}
+
+.font-cef {
+  font-family: 'CEFFontsCJK-Regular', sans-serif;
+  font-weight: bold;
+}
+
+.font-zaiZai {
+  font-family: 'ZaiZaiHomePen-20231015', sans-serif;
+}
+
+/* ==========  常用字型大小 class ========== */
+.text-lg { font-size: 35px; }
+.text-md { font-size: 28px; }
+.text-sm { font-size: 21px; }
+.text-bold { font-weight: bold; }
+
+/* ==========  全域重置  ========== */
 html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
 
-/* 2) 父容器不固定高度，由圖片決定 */
+/* 若需要更完整的 reset, 可再引入 normalize.css 或其他 reset */
+
+/* ==========  背景  ========== */
 .background-container {
   position: relative;
   width: 100%;
 }
 
-/* 3) 圖片鋪滿寬度 */
 .background-container img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* 4) 上方浮在圖片的白色半透明框 */
+/* ==========  上方浮動白色區塊  ========== */
 .overlay-text {
   position: absolute;
   top: 16%;
@@ -115,13 +187,11 @@ html, body {
   text-align: center;
   z-index: 1;
 }
-
 .overlay-text h1 {
   margin: 0;
   font-size: 16px;
   color: #888;
 }
-
 .overlay-text input {
   display: block;
   width: 100%;
@@ -135,147 +205,88 @@ html, body {
   border-radius: 5px;
 }
 
-/* ★ 下方 2 欄 (left / right) 採絕對定位 */
+/* ==========  下方兩欄區塊  ========== */
+/* 若要固定在背景圖特定位置，可保留絕對定位 (以下保留原先做法) */
 .two-col-boxes {
   position: absolute;
-  top: 52%;            /* 下方框與上方透明框的距離 */
-  left: 46%;           /* 往左些，可依需求調整 */
+  top: 52%;            
+  left: 46%;           
   transform: translate(-50%, -48%);
-  display: flex;       /* 左欄、右欄 並排 */
-  gap: 30px;           /* 欄之間的距離 */
+  display: flex;       
+  gap: 30px;           
   z-index: 1;
   width: 80%;
   max-width: 800px;
   text-align: center;
 }
-
-/* ★ 每欄上下 2 框 → 用 flex column，並加 gap 控制上下距離 */
 .two-col-boxes .column {
   display: flex;
   flex-direction: column; 
-  gap: 22px; /* 上/下框之間的距離，可自行調整 */
+  gap: 22px;
 }
 
-.two-col-boxes .box {
-    flex: none;
-    width: 130px; /* 框的寬度 */
-    height: 100px; /* 框的高度 */
-    background: linear-gradient(to bottom,  rgba(255, 255, 255, 0.6) 70%, white 30%); /* 70% 透明，底部 30% 白色 */
-    border: 5px solid white; /* 白色邊框 */
-    border-radius: 10px; /* 圓角 */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 陰影讓相片框更立體 */
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* 讓內部元素能正確定位 */
+/* ==========  每個小方框 (box)  ========== */
+.box {
+  flex: none;
+  width: 130px;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 70%, white 30%);
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 /* 左上角的圓洞裝飾 */
-.two-col-boxes .box::before {
-    content: "";
-    position: absolute;
-    top: 5px; /* 距離上邊緣 */
-    left: 5px; /* 距離左邊緣 */
-    width: 15px; /* 圓洞的大小 */
-    height: 15px; /* 圓洞的大小 */
-    background: white; /* 圓洞顏色 */
-    border-radius: 50%; /* 讓它變成圓形 */
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); /* 讓圓洞有凹陷感 */
+.box::before {
+  content: "";
+  position: absolute;
+  top: 5px; 
+  left: 5px; 
+  width: 15px; 
+  height: 15px; 
+  background: white;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* 文字大小/顏色可依需求 */
-.two-col-boxes .box p {
-  font-size: 25px;
-  font-weight: bold;
-  color: #666;
-}
-
+/* 文字的預設樣式 (若要在 box 內置中顯示文字) */
+.box p,
 .preview-text {
   display: flex;
-  flex-direction: column; /* 讓文字垂直排列 */
-  align-items: center;    /* 水平置中 */
-  justify-content: center;/* 垂直置中 */
-  text-align: center;     /* 文字置中 */
-  height: 100%;           /* 讓 p 撐滿父容器 (box) */
-  margin: 0;              /* 移除預設的段落外距，如需要 */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;  
+  color: #666;
+  font-size: 25px; /* 可在外部再加 .text-md or .text-sm 覆蓋 */
+  font-weight: bold;
 }
 
-.preview-text .main-text {
-  font-family: 'LXGWMarkerGothic-Regular', sans-serif;font-size: 28px;
-}
-
-/* 讓「字型3」的框內 main-text 使用 PopGothicCjkTc */
-.two-col-boxes .column:first-child .box:nth-child(2) .main-text {
-  font-family: 'PopGothicCjkTc-Regular', sans-serif;
-}
-
-/* 讓「字型5」的框內 main-text 使用 wt071 */
-.two-col-boxes .column:first-child .box:nth-child(3) .main-text {
-  font-family: 'wt071', sans-serif;
-}
-
-/* 讓「字型7」的框內 main-text 使用edukai-5.0 */
-.two-col-boxes .column:first-child .box:nth-child(4) .main-text {
-  font-family: 'edukai-5.0', sans-serif;
-}
-
-/* 讓「字型9」的框內 main-text 使用NotoSansJP-VariableFont_wght.0 */
-.two-col-boxes .column:first-child .box:nth-child(5) .main-text {
-  font-family: 'NotoSansJP-VariableFont_wght', sans-serif;
-}
-
-/* 讓「字型11」的框內 main-text 改用 BpmfZihiKaiStd-Regular */
-.two-col-boxes .column:first-child .box:last-child .main-text {
-  font-family: 'BpmfZihiKaiStd-Regular', sans-serif; font-size: 21px; font-weight: bold;
-}
-
-/* 讓「字型2」的框內 main-text 使用 wt006 */
-.two-col-boxes .column:last-child .box:nth-child(1) .main-text {
-  font-family: 'wt006', sans-serif; font-weight: bold;
-}
-
-/* 讓「字型4」的框內 main-text 使用 KosefontP-JP */
-.two-col-boxes .column:last-child .box:nth-child(2) .main-text {
-  font-family: 'KosefontP-JP', sans-serif;
-}
-
-/* 讓「字型6」的框內 main-text 使用 wt064*/
-.two-col-boxes .column:last-child .box:nth-child(3) .main-text {
-  font-family: 'wt064', sans-serif;
-}
-
-/* 讓「字型8」的框內 main-text 使用 宅在家自動筆20231015*/
-.two-col-boxes .column:last-child .box:nth-child(4) .main-text {
-  font-family: '宅在家自動筆20231015', sans-serif;
-}
-
-/* 讓「字型10」的框內 main-text 使用 CEFFontsCJK-Regular*/
-.two-col-boxes .column:last-child .box:nth-child(5) .main-text {
-  font-family: 'CEFFontsCJK-Regular', sans-serif; font-weight: bold;
-}
-
-/* 讓「字型12」的框內 main-text 改用 BpmfGenSenRounded-M */
-.two-col-boxes .column:last-child .box:last-child .main-text {
-  font-family: 'BpmfGenSenRounded-M', sans-serif;font-size: 21px;
-}
-
+/* ==========  其他通用樣式  ========== */
 .main-text {
   font-size: 35px;
   font-weight: normal;
-  color: black; /* 讓顏色變淡 (50% 透明度的黑色) */
-  transition: color 0.3s ease; /* 讓顏色變化更流暢 */
-  margin-top: 29px; /* 增加上邊距，讓文字下移 */
+  color: rgba(0,0,0,0.5); /* 50% 透明度黑色 */
+  transition: color 0.3s ease;
+  margin-top: 29px; /* 與上方元素的距離 */
 }
 
 .sub-text {
-    font-size: 20px; /* 調大字型 */
-    font-weight: bold; /* 加粗 */
-    color: #6e90ff;
-    margin-top: 27px; /* 與上方文字的距離 */
+  font-size: 20px;
+  font-weight: bold;
+  color: #6e90ff;
+  margin-top: 27px;
 }
 
 .placeholder-text {
-  font-size: 20px; /* 讓「預覽字型」這 4 個字變小 */
-  opacity: 0.7; /* 讓它稍微淡一些，和輸入文字區分 */
+  font-size: 20px;
+  opacity: 0.7;
 }
