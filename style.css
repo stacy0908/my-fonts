@@ -279,3 +279,26 @@ html, body {
   font-size: 20px; /* 讓「預覽字型」這 4 個字變小 */
   opacity: 0.7; /* 讓它稍微淡一些，和輸入文字區分 */
 }
+
+@media (max-width: 768px) {
+  /* 保持兩欄布局，但可能需要調整大小 */
+  .two-col-boxes {
+    flex-direction: row; /* 確保是並排的 */
+    width: 90%; /* 可能需要調整寬度 */
+  }
+  
+  /* 縮小框的大小 */
+  .two-col-boxes .box {
+    width: 100px; /* 較小的寬度 */
+    height: 80px; /* 較小的高度 */
+  }
+  
+  /* 縮小字型大小 */
+  .main-text {
+    font-size: 18px;
+  }
+  
+  .sub-text {
+    font-size: 16px;
+  }
+}
