@@ -241,7 +241,7 @@ html, body {
 
 /* 讓「字型2」的框內 main-text 使用 wt006 */
 .two-col-boxes .column:last-child .box:nth-child(1) .main-text {
-  font-family: 'wt006', sans-serif; font-weight: bold;
+  font-family: 'wt006', sans-serif;
 }
 
 /* 讓「字型4」的框內 main-text 使用 KosefontP-JP */
