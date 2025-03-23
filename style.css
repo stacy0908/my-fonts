@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'LXGWMarkerGothic-Regular';
     src: url('LXGWMarkerGothic-Regular.woff2') format('woff2'),
-         url('LXGWMarkerGothic-Regular.ttf') format('truetype'); 
-    font-weight: normal;
+         font-weight: normal;
     font-style: normal;
 }
 
