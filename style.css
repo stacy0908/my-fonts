@@ -1,14 +1,13 @@
 @font-face {
     font-family: 'LXGWMarkerGothic-Regular';
-    src: url('LXGWMarkerGothic-Regular.woff2') format('woff2'),
+    src: url('LXGWMarkerGothic-Regular.woff2') format('woff2');
          font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'wt006';
-    src: url('wt006.woff2') format('woff2'),
-         url('wt006.ttf') format('truetype'); 
+    src: url('wt006.woff2') format('woff2'); 
     font-weight: normal;
     font-style: normal;
 }
