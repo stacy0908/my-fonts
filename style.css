@@ -14,8 +14,7 @@
 
 @font-face {
   font-family: 'BpmfGenSenRounded-M';
-  src: url('BpmfGenSenRounded-M') format('woff2'),
-       url('BpmfGenSenRounded-M.ttf') format('truetype');
+  src: url('BpmfGenSenRounded-M') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
