@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: 'wt006';
-    src: url('wt006.woff2.woff2') format('woff2'); 
+    font-family: 'jf-openhuninn-2.1';
+    src: url('jf-openhuninn-2.1.woff2.woff2') format('woff2'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -239,9 +239,9 @@ html, body {
   font-family: 'BpmfZihiKaiStd-Regular', sans-serif; font-size: 21px; font-weight: bold;
 }
 
-/* 讓「字型2」的框內 main-text 使用 wt006 */
+/* 讓「字型2」的框內 main-text 使用 jf-openhuninn-2.1 */
 .two-col-boxes .column:last-child .box:nth-child(1) .main-text {
-  font-family: 'wt006', sans-serif;
+  font-family: 'jf-openhuninn-2.1', sans-serif;
 }
 
 /* 讓「字型4」的框內 main-text 使用 KosefontP-JP */
