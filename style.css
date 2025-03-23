@@ -146,15 +146,16 @@ html, body {
 
 /* ★ 下方 2 欄 (left / right) 採絕對定位 */
 .two-col-boxes {
-  position: relative; /* 讓它不再浮在圖片上，而是圖片下方自然排列 */
-  margin: 40px auto 0 auto; /* 上邊距讓它不緊貼 overlay */
-  display: flex;
-  gap: 30px;
+  position: absolute;
+  top: 52%;            /* 下方框與上方透明框的距離 */
+  left: 46%;           /* 往左些，可依需求調整 */
+  transform: translate(-50%, -48%);
+  display: flex;       /* 左欄、右欄 並排 */
+  gap: 30px;           /* 欄之間的距離 */
   z-index: 1;
   width: 80%;
   max-width: 800px;
   text-align: center;
-  justify-content: center;
 }
 
 /* ★ 每欄上下 2 框 → 用 flex column，並加 gap 控制上下距離 */
