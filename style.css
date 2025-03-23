@@ -8,77 +8,88 @@
 
 @font-face {
     font-family: 'wt006';
-    src: url('wt006.ttf') format('truetype'); 
+    src: url('wt006.woff2') format('woff2'),
+         url('wt006.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
   font-family: 'BpmfGenSenRounded-M';
-  src: url('BpmfGenSenRounded-M.ttf') format('truetype');
+  src: url('BpmfGenSenRounded-M') format('woff2'),
+       url('BpmfGenSenRounded-M.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'KosefontP-JP';
-  src: url('KosefontP-JP.ttf') format('truetype');
+  src: url('KosefontP-JP') format('woff2'),
+       url('KosefontP-JP.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'BpmfZihiKaiStd-Regular';
-  src: url('BpmfZihiKaiStd-Regular.ttf') format('truetype');
+  src: url('BpmfZihiKaiStd-Regular') format('woff2'),
+       url('BpmfZihiKaiStd-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'wt021';
-  src: url('wt021.ttf') format('truetype');
+  src: url('wt021') format('woff2'),
+       url('wt021.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PopGothicCjkTc-Regular';
-  src: url('PopGothicCjkTc-Regular.ttf') format('truetype');
+  src: url('PopGothicCjkTc-Regular') format('woff2'),
+       url('PopGothicCjkTc-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'wt071';
-  src: url('wt071.ttf') format('truetype');
+  src: url('wt071') format('woff2'),
+       url('wt071.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: '宅在家自動筆20231015';
-  src: url('宅在家自動筆20231015.ttf') format('truetype');
+  src: url('宅在家自動筆20231015') format('woff2'),
+       url('宅在家自動筆20231015.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'CEFFontsCJK-Regular';
-  src: url('CEFFontsCJK-Regular.ttf') format('truetype');
+  src: url('CEFFontsCJK-Regular') format('woff2'),
+       url('CEFFontsCJK-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'edukai-5.0';
-  src: url('edukai-5.0.ttf') format('truetype');
+  src: url('edukai-5.0') format('woff2'),
+       url('edukai-5.0.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'NotoSansJP-VariableFont_wght';
-  src: url('NotoSansJP-VariableFont_wght.ttf') format('truetype');
+  src: url('NotoSansJP-VariableFont_wght') format('woff2'),
+       url('NotoSansJP-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
