@@ -241,7 +241,7 @@ html, body {
 
 /* 讓「字型2」的框內 main-text 使用 jf-openhuninn-2.1 */
 .two-col-boxes .column:last-child .box:nth-child(1) .main-text {
-  font-family: 'jf-openhuninn-2.1', sans-serif;
+  font-family: 'jf-openhuninn-2.1', sans-serif; font-weight: bold;
 }
 
 /* 讓「字型4」的框內 main-text 使用 KosefontP-JP */
