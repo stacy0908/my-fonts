@@ -171,7 +171,7 @@ html, body {
     height: 100px; /* 框的高度 */
     background: linear-gradient(to bottom,  rgba(255, 255, 255, 0.6) 70%, white 30%); /* 70% 透明，底部 30% 白色 */
     border: 2px solid white; /* 白色邊框 */
-    border-radius: 10px; /* 圓角 */
+    border-radius: 0px; /* 圓角 */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 陰影讓相片框更立體 */
     padding: 10px;
     display: flex;
