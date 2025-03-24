@@ -188,7 +188,7 @@ html, body {
     left: 5px; /* 距離左邊緣 */
     width: 15px; /* 圓洞的大小 */
     height: 15px; /* 圓洞的大小 */
-    background: #ffd9e6; /* 圓洞顏色 */
+    background: #9bc8fb; /* 圓洞顏色 */
     border-radius: 50%; /* 讓它變成圓形 */
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); /* 讓圓洞有凹陷感 */
 }
