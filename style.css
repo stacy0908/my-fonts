@@ -170,7 +170,7 @@ html, body {
     width: 130px; /* 框的寬度 */
     height: 100px; /* 框的高度 */
     background: linear-gradient(to bottom,  rgba(255, 255, 255, 0.6) 70%, white 30%); /* 70% 透明，底部 30% 白色 */
-    border: 5px solid white; /* 白色邊框 */
+    border: 1px solid white; /* 白色邊框 */
     border-radius: 10px; /* 圓角 */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* 陰影讓相片框更立體 */
     padding: 10px;
@@ -236,7 +236,7 @@ html, body {
 
 /* 讓「字型11」的框內 main-text 改用 BpmfZihiKaiStd-Regular */
 .two-col-boxes .column:first-child .box:last-child .main-text {
-  font-family: 'BpmfZihiKaiStd-Regular', sans-serif; font-size: 23px; font-weight: bold;
+  font-family: 'BpmfZihiKaiStd-Regular', sans-serif; font-size: 22px; font-weight: bold;
 }
 
 /* 讓「字型2」的框內 main-text 使用 jf-openhuninn-2.1 */
@@ -266,7 +266,7 @@ html, body {
 
 /* 讓「字型12」的框內 main-text 改用 BpmfGenSenRounded-M */
 .two-col-boxes .column:last-child .box:last-child .main-text {
-  font-family: 'BpmfGenSenRounded-M', sans-serif;font-size: 23px;
+  font-family: 'BpmfGenSenRounded-M', sans-serif;font-size: 22px;
 }
 
 .main-text {
