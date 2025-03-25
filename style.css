@@ -21,72 +21,63 @@
 
 @font-face {
   font-family: 'KosefontP-JP';
-  src: url('KosefontP-JP.woff2') format('woff2'),
-       url('KosefontP-JP.ttf') format('truetype');
+  src: url('KosefontP-JP.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'BpmfZihiKaiStd-Regular';
-  src: url('BpmfZihiKaiStd-Regular.woff2') format('woff2'),
-       url('BpmfZihiKaiStd-Regular.ttf') format('truetype');
+  src: url('BpmfZihiKaiStd-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'wt021';
-  src: url('wt021.woff2') format('woff2'),
-       url('wt021.ttf') format('truetype');
+  src: url('wt021.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PopGothicCjkTc-Regular';
-  src: url('PopGothicCjkTc-Regular.woff2') format('woff2'),
-       url('PopGothicCjkTc-Regular.ttf') format('truetype');
+  src: url('PopGothicCjkTc-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'wt071';
-  src: url('wt071.woff2') format('woff2'),
-       url('wt071.ttf') format('truetype');
+  src: url('wt071.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: '宅在家自動筆20231015';
-  src: url('宅在家自動筆20231015.woff2') format('woff2'),
-       url('宅在家自動筆20231015.ttf') format('truetype');
+  src: url('宅在家自動筆20231015.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'CEFFontsCJK-Regular';
-  src: url('CEFFontsCJK-Regular.woff2') format('woff2'),
-       url('CEFFontsCJK-Regular.ttf') format('truetype');
+  src: url('CEFFontsCJK-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'edukai-5.0';
-  src: url('edukai-5.0.woff2') format('woff2'),
-       url('edukai-5.0.ttf') format('truetype');
+  src: url('edukai-5.0.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'NotoSansJP-VariableFont_wght';
-  src: url('NotoSansJP-VariableFont_wght.woff2') format('woff2'),
-       url('NotoSansJP-VariableFont_wght.ttf') format('truetype');
+  src: url('NotoSansJP-VariableFont_wght.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -241,7 +232,7 @@ html, body {
 
 /* 讓「字型2」的框內 main-text 使用 jf-openhuninn-2.1 */
 .two-col-boxes .column:last-child .box:nth-child(1) .main-text {
-  font-family: 'jf-openhuninn-2.1', sans-serif; font-weight: bold;
+  font-family: 'jf-openhuninn-2.1', sans-serif;
 }
 
 /* 讓「字型4」的框內 main-text 使用 KosefontP-JP */
