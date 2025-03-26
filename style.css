@@ -283,6 +283,7 @@ html, body {
 .placeholder-text {
   font-size: 20px; 
   opacity: 0.7;
+  margin-top: -15px; /* 往上移 10px，視需求自行調整 */
 }
 
 /* === 在每個 .box 底端半透明區域顯示 "UniQue Baby" === */
@@ -294,8 +295,8 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%);
   
-  font-size: 10px;
+  font-size: 15px;
   font-weight: bold;
-  color: #c9c7c7;
+  color: #adacac;
   pointer-events: none; /* 不阻擋滑鼠操作 */
 }
