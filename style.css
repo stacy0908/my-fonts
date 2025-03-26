@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'LXGWMarkerGothic-Regular';
     src: url('LXGWMarkerGothic-Regular.woff2') format('woff2');
-         font-weight: normal;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -160,7 +160,7 @@ html, body {
     flex: none;
     width: 130px; /* 框的寬度 */
     height: 100px; /* 框的高度 */
-    background: linear-gradient(to bottom,  rgba(255, 255, 255, 0.6) 70%, white 30%); /* 70% 透明，底部 30% 白色 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 70%, white 30%); /* 70% 透明，底部 30% 白色 */
     border: 4px solid white; /* 白色邊框 */
     border-radius: 3px; /* 圓角 */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -168,7 +168,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* 讓內部元素能正確定位 */
+    position: relative; /* 讓內部元素能正確定位 (偽元素也依附這裡) */
 }
 
 /* 左上角的圓洞裝飾 */
@@ -202,7 +202,8 @@ html, body {
 }
 
 .preview-text .main-text {
-  font-family: 'LXGWMarkerGothic-Regular', sans-serif;font-size: 28px;
+  font-family: 'LXGWMarkerGothic-Regular', sans-serif;
+  font-size: 28px;
 }
 
 /* 讓「字型3」的框內 main-text 使用 PopGothicCjkTc */
@@ -215,19 +216,21 @@ html, body {
   font-family: 'wt071', sans-serif;
 }
 
-/* 讓「字型7」的框內 main-text 使用edukai-5.0 */
+/* 讓「字型7」的框內 main-text 使用 edukai-5.0 */
 .two-col-boxes .column:first-child .box:nth-child(4) .main-text {
   font-family: 'edukai-5.0', sans-serif;
 }
 
-/* 讓「字型9」的框內 main-text 使用NotoSansJP-VariableFont_wght.0 */
+/* 讓「字型9」的框內 main-text 使用 NotoSansJP-VariableFont_wght */
 .two-col-boxes .column:first-child .box:nth-child(5) .main-text {
   font-family: 'NotoSansJP-VariableFont_wght', sans-serif;
 }
 
 /* 讓「字型11」的框內 main-text 改用 BpmfZihiKaiStd-Regular */
 .two-col-boxes .column:first-child .box:last-child .main-text {
-  font-family: 'BpmfZihiKaiStd-Regular', sans-serif; font-size: 21px; font-weight: bold;
+  font-family: 'BpmfZihiKaiStd-Regular', sans-serif;
+  font-size: 21px;
+  font-weight: bold;
 }
 
 /* 讓「字型2」的框內 main-text 使用 jf-openhuninn-2.1 */
@@ -240,42 +243,59 @@ html, body {
   font-family: 'KosefontP-JP', sans-serif;
 }
 
-/* 讓「字型6」的框內 main-text 使用 wt021*/
+/* 讓「字型6」的框內 main-text 使用 wt021 */
 .two-col-boxes .column:last-child .box:nth-child(3) .main-text {
   font-family: 'wt021', sans-serif;
 }
 
-/* 讓「字型8」的框內 main-text 使用 宅在家自動筆20231015*/
+/* 讓「字型8」的框內 main-text 使用 宅在家自動筆20231015 */
 .two-col-boxes .column:last-child .box:nth-child(4) .main-text {
   font-family: '宅在家自動筆20231015', sans-serif;
 }
 
-/* 讓「字型10」的框內 main-text 使用 CEFFontsCJK-Regular*/
+/* 讓「字型10」的框內 main-text 使用 CEFFontsCJK-Regular */
 .two-col-boxes .column:last-child .box:nth-child(5) .main-text {
-  font-family: 'CEFFontsCJK-Regular', sans-serif; font-weight: bold;
+  font-family: 'CEFFontsCJK-Regular', sans-serif;
+  font-weight: bold;
 }
 
 /* 讓「字型12」的框內 main-text 改用 BpmfGenSenRounded-M */
 .two-col-boxes .column:last-child .box:last-child .main-text {
-  font-family: 'BpmfGenSenRounded-M', sans-serif; font-size: 21px;
+  font-family: 'BpmfGenSenRounded-M', sans-serif;
+  font-size: 21px;
 }
 
 .main-text {
   font-size: 35px;
   font-weight: normal;
-  color: black; /* 讓顏色變淡 (50% 透明度的黑色) */
-  transition: color 0.3s ease; /* 讓顏色變化更流暢 */
-  margin-top: 29px; /* 增加上邊距，讓文字下移 */
+  color: black;
+  transition: color 0.3s ease;
+  margin-top: 29px;
 }
 
 .sub-text {
-    font-size: 20px; /* 調大字型 */
-    font-weight: bold; /* 加粗 */
-    color: #483d8b;
-    margin-top: 27px; /* 與上方文字的距離 */
+  font-size: 20px; 
+  font-weight: bold; 
+  color: #483d8b;
+  margin-top: 27px;
 }
 
 .placeholder-text {
-  font-size: 20px; /* 讓「預覽字型」這 4 個字變小 */
-  opacity: 0.7; /* 讓它稍微淡一些，和輸入文字區分 */
+  font-size: 20px; 
+  opacity: 0.7;
+}
+
+/* === 在每個 .box 底端半透明區域顯示 "UniQue Baby" === */
+.two-col-boxes .box::after {
+  content: "UniQue Baby";
+  position: absolute;
+  /* 70% 對應於漸層: rgba(255,255,255,0.6) 70% → white 30% */
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  pointer-events: none; /* 不阻擋滑鼠操作 */
 }
