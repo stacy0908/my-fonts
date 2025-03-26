@@ -294,8 +294,8 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%);
   
-  font-size: 16px;
+  font-size: 10px;
   font-weight: bold;
-  color: #666;
+  color: #c9c7c7;
   pointer-events: none; /* 不阻擋滑鼠操作 */
 }
