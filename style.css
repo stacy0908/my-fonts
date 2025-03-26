@@ -296,7 +296,7 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%);
   
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   color: white;
   pointer-events: none; /* 不阻擋滑鼠操作 */
