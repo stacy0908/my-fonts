@@ -301,3 +301,6 @@ html, body {
   color: white;
   pointer-events: none; /* 不阻擋滑鼠操作 */
 }
+
+  /* ★ 關鍵：強制單行顯示，避免自動換行 */
+  white-space: nowrap;
