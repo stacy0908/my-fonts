@@ -292,12 +292,12 @@ html, body {
   content: "UniQue Baby";
   position: absolute;
   /* 70% 對應於漸層: rgba(255,255,255,0.6) 70% → white 30% */
-  top: 70%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   
   font-size: 12px;
   font-weight: bold;
-  color: white;
+  color: #f0eded;
   pointer-events: none; /* 不阻擋滑鼠操作 */
 }
