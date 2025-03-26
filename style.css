@@ -298,6 +298,6 @@ html, body {
   
   font-size: 12px;
   font-weight: bold;
-  color: #f0eded;
+  color: white;
   pointer-events: none; /* 不阻擋滑鼠操作 */
 }
