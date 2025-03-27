@@ -3,26 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>背景圖片-字型範例</title>
-  <!-- 連結外部的 CSS 檔 -->
+  <title>完整背景圖片</title>
+  <!-- 連結你的外部 CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="background-container">
-    <!-- 放你的背景圖檔，請自行確保同資料夾下有 background.png -->
     <img src="background.png" alt="背景圖片" />
-
-    <!-- 上方半透明白框 (輸入名字) -->
+    <!-- 上方浮在圖片之上的白色半透明框 -->
     <div class="overlay-text">
       <h1>您寶貝的名字</h1>
       <input type="text" id="nameInput" placeholder="請在此輸入....">
     </div>
-
-    <!-- 下方 6 列 (row)、每列 2 個 box (字型 1~12) -->
+    <!-- 下方 2 欄，並在每欄放 6 個 "白色透明框" -->
     <div class="two-col-boxes">
-      
-      <!-- 第 1 row: 字型1(左) + 字型2(右) -->
-      <div class="row">
+      <!-- 左欄：6 個框 -->
+      <div class="column">
         <div class="box">
           <p class="preview-text">
             <span class="main-text placeholder-text">預覽字型</span>
@@ -32,29 +28,9 @@
         <div class="box">
           <p class="preview-text">
             <span class="main-text placeholder-text">預覽字型</span>
-            <span class="sub-text">字型2</span>
-          </p>
-        </div>
-      </div>
-
-      <!-- 第 2 row: 字型3(左) + 字型4(右) -->
-      <div class="row">
-        <div class="box">
-          <p class="preview-text">
-            <span class="main-text placeholder-text">預覽字型</span>
             <span class="sub-text">字型3</span>
           </p>
         </div>
-        <div class="box">
-          <p class="preview-text">
-            <span class="main-text placeholder-text">預覽字型</span>
-            <span class="sub-text">字型4</span>
-          </p>
-        </div>
-      </div>
-
-      <!-- 第 3 row: 字型5(左) + 字型6(右) -->
-      <div class="row">
         <div class="box">
           <p class="preview-text">
             <span class="main-text placeholder-text">預覽字型</span>
@@ -64,29 +40,9 @@
         <div class="box">
           <p class="preview-text">
             <span class="main-text placeholder-text">預覽字型</span>
-            <span class="sub-text">字型6</span>
-          </p>
-        </div>
-      </div>
-
-      <!-- 第 4 row: 字型7(左) + 字型8(右) -->
-      <div class="row">
-        <div class="box">
-          <p class="preview-text">
-            <span class="main-text placeholder-text">預覽字型</span>
             <span class="sub-text">字型7</span>
           </p>
         </div>
-        <div class="box">
-          <p class="preview-text">
-            <span class="main-text placeholder-text">預覽字型</span>
-            <span class="sub-text">字型8</span>
-          </p>
-        </div>
-      </div>
-
-      <!-- 第 5 row: 字型9(左) + 字型10(右) -->
-      <div class="row">
         <div class="box">
           <p class="preview-text">
             <span class="main-text placeholder-text">預覽字型</span>
@@ -96,17 +52,40 @@
         <div class="box">
           <p class="preview-text">
             <span class="main-text placeholder-text">預覽字型</span>
-            <span class="sub-text">字型10</span>
+            <span class="sub-text">字型11</span>
           </p>
         </div>
       </div>
-
-      <!-- 第 6 row: 字型11(左) + 字型12(右) -->
-      <div class="row">
+      <!-- 右欄：6 個框 -->
+      <div class="column">
         <div class="box">
           <p class="preview-text">
             <span class="main-text placeholder-text">預覽字型</span>
-            <span class="sub-text">字型11</span>
+            <span class="sub-text">字型2</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text placeholder-text">預覽字型</span>
+            <span class="sub-text">字型4</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text placeholder-text">預覽字型</span>
+            <span class="sub-text">字型6</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text placeholder-text">預覽字型</span>
+            <span class="sub-text">字型8</span>
+          </p>
+        </div>
+        <div class="box">
+          <p class="preview-text">
+            <span class="main-text placeholder-text">預覽字型</span>
+            <span class="sub-text">字型10</span>
           </p>
         </div>
         <div class="box">
@@ -116,11 +95,5 @@
           </p>
         </div>
       </div>
-
-    </div><!-- .two-col-boxes 結束 -->
-  </div><!-- .background-container 結束 -->
-
-  <!-- 連結外部 JS -->
-  <script src="script.js"></script>
-</body>
-</html>
+    </div>
+  </div>
