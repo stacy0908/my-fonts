@@ -129,7 +129,7 @@ html, body {
   margin-top: 10px;
     
    /* 把 padding 分開寫，上(10px) 右(15px) 下(20px) 左(15px) */
-  padding: 5px 15px 20px 15px;
+  padding: 20px 15px 20px 15px;
     
   font-size: 16px;
   color: #666;
