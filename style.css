@@ -138,7 +138,7 @@ html, body {
 /* ★ 下方 2 欄 (left / right) 採絕對定位 */
 .two-col-boxes {
   position: absolute;
-  top: 48%;            /* 下方框與上方透明框的距離 */
+  top: 52%;            /* 下方框與上方透明框的距離 */
   left: 46%;           /* 往左些，可依需求調整 */
   transform: translate(-50%, -48%);
   display: flex;       /* 左欄、右欄 並排 */
@@ -278,8 +278,6 @@ html, body {
   font-weight: bold; 
   color: #483d8b;
   margin-top: 27px;
-/* 新增陰影效果 */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .placeholder-text {
@@ -294,7 +292,7 @@ html, body {
   content: "UniQue Baby";
   position: absolute;
   /* 70% 對應於漸層: rgba(255,255,255,0.6) 70% → white 30% */
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   
