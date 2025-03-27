@@ -292,7 +292,7 @@ html, body {
   content: "UniQue Baby";
   position: absolute;
   /* 70% 對應於漸層: rgba(255,255,255,0.6) 70% → white 30% */
-  top: 65%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   
