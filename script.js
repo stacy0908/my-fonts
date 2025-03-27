@@ -33,7 +33,7 @@
     });
     // 依序設定字型1~字型12的文字
     subTexts.forEach((element, index) => {
-      element.textContent = 字型${index + 1};
+      element.textContent = "字型" + (index + 1);
     });
   });
 </script>
