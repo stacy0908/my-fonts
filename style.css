@@ -127,7 +127,10 @@ html, body {
   width: 100%;
   box-sizing: border-box;
   margin-top: 10px;
-  padding: 15px;
+    
+   /* 把 padding 分開寫，上(10px) 右(15px) 下(20px) 左(15px) */
+  padding: 10px 15px 20px 15px;
+    
   font-size: 16px;
   color: #666;
   background: #fff;
@@ -270,7 +273,7 @@ html, body {
   font-weight: normal;
   color: black;
   transition: color 0.3s ease;
-  margin-top: 25px;
+  margin-top: 29px;
 }
 
 .sub-text {
