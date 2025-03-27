@@ -150,6 +150,8 @@ html, body {
   width: 80%;
   max-width: 800px;
   text-align: center;
+  /* ★ 關鍵：強制單行顯示，避免自動換行 */
+  white-space: nowrap;
 }
 
 /* ★ 每欄上下 2 框 → 用 flex column，並加 gap 控制上下距離 */
@@ -305,5 +307,3 @@ html, body {
   pointer-events: none; /* 不阻擋滑鼠操作 */
 }
 
-  /* ★ 關鍵：強制單行顯示，避免自動換行 */
-  white-space: nowrap;
