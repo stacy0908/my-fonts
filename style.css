@@ -250,7 +250,7 @@ html, body {
 
 /* 讓「字型8」的框內 main-text 使用 宅在家自動筆20231015 */
 .two-col-boxes .column:last-child .box:nth-child(4) .main-text {
-  font-family: '宅在家自動筆20231015', sans-serif; font-size: 22px;
+  font-family: '宅在家自動筆20231015', sans-serif; font-size: 25px;
 }
 
 /* 讓「字型10」的框內 main-text 使用 CEFFontsCJK-Regular */
@@ -292,7 +292,7 @@ html, body {
   content: "UniQue Baby";
   position: absolute;
   /* 70% 對應於漸層: rgba(255,255,255,0.6) 70% → white 30% */
-  top: 55%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   
