@@ -19,3 +19,9 @@ inputName.addEventListener("input", function () {
       element.classList.remove("placeholder-text");
     }
   });
+  // 依序設定字型1~字型12的文字（若只有部分字型，也可自行調整）
+  subTexts.forEach((element, index) => {
+    // ★ 這裡使用 ES6 反引號 (Template Literal) 進行字串插值
+    element.textContent = 字型${index + 1};
+  });
+});
