@@ -138,7 +138,7 @@ html, body {
 /* ★ 下方 2 欄 (left / right) 採絕對定位 */
 .two-col-boxes {
   position: absolute;
-  top: 52%;            /* 下方框與上方透明框的距離 */
+  top: 55%;            /* 下方框與上方透明框的距離 */
   left: 46%;           /* 往左些，可依需求調整 */
   transform: translate(-50%, -48%);
   display: flex;       /* 左欄、右欄 並排 */
