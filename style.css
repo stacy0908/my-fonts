@@ -20,8 +20,8 @@
 }
 
 @font-face {
-  font-family: 'KosefontP-JP';
-  src: url('KosefontP-JP.woff2') format('woff2');
+  font-family: 'Mamelon';
+  src: url('Mamelon.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -240,9 +240,9 @@ html, body {
   font-family: 'jf-openhuninn-2.1', sans-serif;
 }
 
-/* 讓「字型4」的框內 main-text 使用 KosefontP-JP */
+/* 讓「字型4」的框內 main-text 使用 Mamelon */
 .two-col-boxes .column:last-child .box:nth-child(2) .main-text {
-  font-family: 'KosefontP-JP', sans-serif;
+  font-family: 'Mamelon', sans-serif;
 }
 
 /* 讓「字型6」的框內 main-text 使用 wt021 */
