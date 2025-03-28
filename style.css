@@ -303,3 +303,33 @@ html, body {
   color: white;
   pointer-events: none; /* 不阻擋滑鼠操作 */
 }
+
+/* 手機 (max-width: 768px) 保持原本設定 */
+@media (max-width: 768px) {
+  .overlay-text {
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .two-col-boxes {
+    top: 52%;
+    left: 46%;
+    transform: translate(-50%, -48%);
+  }
+}
+
+/* 桌機 (min-width: 769px) 再做調整 */
+@media (min-width: 769px) {
+  .overlay-text {
+    /* 你可視需求調整，以下只是示範 */
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .two-col-boxes {
+    /* 桌機螢幕一般較寬，所以可把整塊再往下些 */
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -58%);
+  }
+}
