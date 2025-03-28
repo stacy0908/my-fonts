@@ -76,8 +76,8 @@
 }
 
 @font-face {
-  font-family: 'NotoSansJP-VariableFont_wght';
-  src: url('NotoSansJP-VariableFont_wght.woff2') format('woff2');
+  font-family: 'NotoSansTC-Regular';
+  src: url('NotoSansTC-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -223,9 +223,9 @@ html, body {
   font-family: 'edukai-5.0', sans-serif;
 }
 
-/* 讓「字型9」的框內 main-text 使用 NotoSansJP-VariableFont_wght */
+/* 讓「字型9」的框內 main-text 使用 NotoSansTC-Regular */
 .two-col-boxes .column:first-child .box:nth-child(5) .main-text {
-  font-family: 'NotoSansJP-VariableFont_wght', sans-serif;
+  font-family: 'NotoSansTC-Regular', sans-serif;
 }
 
 /* 讓「字型11」的框內 main-text 改用 BpmfZihiKaiStd-Regular */
