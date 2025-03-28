@@ -274,7 +274,10 @@ html, body {
   transition: color 0.3s ease;
   margin-top: 26px;
 }
-
+/* 使用者輸入文字的樣式，往上移一些 */
+.user-input {
+  margin-top: 10px; /* 或 position: relative; top: -10px; */
+}
 .sub-text {
   font-size: 20px; 
   font-weight: bold; 
