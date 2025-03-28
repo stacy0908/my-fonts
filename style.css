@@ -304,3 +304,7 @@ html, body {
   pointer-events: none; /* 不阻擋滑鼠操作 */
 }
 
+// 依序設定字型1~字型12的文字（若只有部分字型，也可自行調整）
+subTexts.forEach((element, index) => {
+  element.textContent = `字型${index + 1}`;
+});
