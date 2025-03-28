@@ -62,8 +62,8 @@
 }
 
 @font-face {
-  font-family: 'CEFFontsCJK-Regular';
-  src: url('CEFFontsCJK-Regular.woff2') format('woff2');
+  font-family: 'GlowSansTC-Compressed-Medium';
+  src: url('GlowSansTC-Compressed-Medium.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -255,10 +255,9 @@ html, body {
   font-family: '宅在家自動筆20231015', sans-serif; font-size: 25px;
 }
 
-/* 讓「字型10」的框內 main-text 使用 CEFFontsCJK-Regular */
+/* 讓「字型10」的框內 main-text 使用 GlowSansTC-Compressed-Medium */
 .two-col-boxes .column:last-child .box:nth-child(5) .main-text {
-  font-family: 'CEFFontsCJK-Regular', sans-serif;
-  font-weight: bold;
+  font-family: 'GlowSansTC-Compressed-Medium', sans-serif;
 }
 
 /* 讓「字型12」的框內 main-text 改用 BpmfGenSenRounded-M */
