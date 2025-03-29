@@ -324,12 +324,12 @@ top: -5px; /* 往上 5px (可自行調整) */
     /* 你可視需求調整，以下只是示範 */
     top: 15%;
     left: 40%;
-    transform: translate(-10%, -60%);
+    transform: translate(-10%, -58%);
   }
   .two-col-boxes {
     /* 桌機螢幕一般較寬，所以可把整塊再往下些 */
     top: 25%;
     left: 50%;
-    transform: translate(-25%, -55%);
+    transform: translate(-25%, -58%);
   }
 }
