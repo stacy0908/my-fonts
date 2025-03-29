@@ -139,7 +139,7 @@ html, body {
 .two-col-boxes {
   position: absolute;
   top: 70%;            /* 下方框與上方透明框的距離 */
-  left: 48%;           /* 往左些，可依需求調整 */
+  left: 47%;           /* 往左些，可依需求調整 */
   transform: translate(-50%, -48%);
   display: flex;       /* 左欄、右欄 並排 */
   gap: 30px;           /* 欄之間的距離 */
@@ -178,7 +178,7 @@ html, body {
     content: "";
     position: absolute;
     top: 5px; /* 距離上邊緣 */
-    left: 5px; /* 距離左邊緣 */
+    left: 6px; /* 距離左邊緣 */
     width: 15px; /* 圓洞的大小 */
     height: 15px; /* 圓洞的大小 */
     background: #9bc8fb; /* 圓洞顏色 */
@@ -324,12 +324,12 @@ top: -5px; /* 往上 5px (可自行調整) */
     /* 你可視需求調整，以下只是示範 */
     top: 15%;
     left: 40%;
-    transform: translate(-10%, -55%);
+    transform: translate(-10%, -60%);
   }
   .two-col-boxes {
     /* 桌機螢幕一般較寬，所以可把整塊再往下些 */
     top: 25%;
     left: 50%;
-    transform: translate(-25%, -60%);
+    transform: translate(-25%, -55%);
   }
 }
