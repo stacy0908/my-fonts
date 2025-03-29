@@ -328,7 +328,7 @@ top: -5px; /* 往上 5px (可自行調整) */
   }
   .two-col-boxes {
     /* 桌機螢幕一般較寬，所以可把整塊再往下些 */
-    top: 40%;
+    top: 25%;
     left: 50%;
     transform: translate(-25%, -58%);
   }
