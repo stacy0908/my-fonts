@@ -216,6 +216,7 @@ html, body {
 /* 讓「字型5」的框內 main-text 使用 wt071 */
 .two-col-boxes .column:first-child .box:nth-child(3) .main-text {
   font-family: 'wt071', sans-serif;
+top: -5px; /* 往上 5px (可自行調整) */ 
 }
 
 /* 讓「字型7」的框內 main-text 使用 edukai-5.0 */
