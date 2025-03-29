@@ -321,7 +321,7 @@ html, body {
 @media (min-width: 769px) {
   .overlay-text {
     /* 你可視需求調整，以下只是示範 */
-    top: 12%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
