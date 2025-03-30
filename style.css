@@ -232,7 +232,7 @@ top: -5px; /* 往上 5px (可自行調整) */
 /* 讓「字型11」的框內 main-text 改用 wp010-08 */
 .two-col-boxes .column:first-child .box:last-child .main-text {
   font-family: 'wp010-08', sans-serif;
-  font-size: 21px;
+  font-size: 22px;
   font-weight: bold;
 }
 
