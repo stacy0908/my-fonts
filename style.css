@@ -27,8 +27,8 @@
 }
 
 @font-face {
-  font-family: 'BpmfZihiKaiStd-Regular';
-  src: url('BpmfZihiKaiStd-Regular.woff2') format('woff2');
+  font-family: 'wp010-08';
+  src: url('wp010-08.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -229,9 +229,9 @@ top: -5px; /* 往上 5px (可自行調整) */
   font-family: 'NotoSansTC-Regular', sans-serif;
 }
 
-/* 讓「字型11」的框內 main-text 改用 BpmfZihiKaiStd-Regular */
+/* 讓「字型11」的框內 main-text 改用 wp010-08 */
 .two-col-boxes .column:first-child .box:last-child .main-text {
-  font-family: 'BpmfZihiKaiStd-Regular', sans-serif;
+  font-family: 'wp010-08', sans-serif;
   font-size: 21px;
   font-weight: bold;
 }
