@@ -163,3 +163,48 @@ html, body {
   font-size: 20px;
   opacity: 0.7;
 }
+
+/* === 在每個 .box 底端半透明區域顯示 "UniQue Baby" === */
+.two-col-boxes .box::after {
+  content: "UniQue Baby";
+  position: absolute;
+  /* 70% 對應於漸層: rgba(255,255,255,0.6) 70% → white 30% */
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  pointer-events: none; /* 不阻擋滑鼠操作 */
+}
+
+/* 手機 (max-width: 768px) 保持原本設定 */
+@media (max-width: 768px) {
+  .overlay-text {
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .two-col-boxes {
+    top: 52%;
+    left: 48%;
+    transform: translate(-50%, -48%);
+  }
+}
+
+/* 桌機 (min-width: 769px) 再做調整 */
+@media (min-width: 769px) {
+  .overlay-text {
+    /* 你可視需求調整，以下只是示範 */
+    top: 15%;
+    left: 40%;
+    transform: translate(-10%, -60%);
+  }
+  .two-col-boxes {
+    /* 桌機螢幕一般較寬，所以可把整塊再往下些 */
+    top: 25%;
+    left: 50%;
+    transform: translate(-25%, -45%);
+  }
+}
