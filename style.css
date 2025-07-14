@@ -138,10 +138,6 @@ html, body {
   font-size: 28px;
 }
 
-.two-col-boxes .column:last-child .box:nth-child(1) .main-text {
-  font-family: 'PopGothicCjkTc-Regular', sans-serif;
-} 
-
 .two-col-boxes .column:first-child .box:nth-child(2) .main-text {
   font-family: 'PopGothicCjkTc-Regular', sans-serif;
 top: -5px; /* 往上 5px (可自行調整) */ 
