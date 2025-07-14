@@ -140,6 +140,7 @@ html, body {
 
 .two-col-boxes .column:last-child .box:nth-child(1) .main-text {
   font-family: 'PopGothicCjkTc-Regular', sans-serif;
+} 
 
 .main-text {
   font-size: 35px;
