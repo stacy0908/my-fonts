@@ -140,12 +140,12 @@ html, body {
 
 /* 讓「字型2」的框內 main-text 使用 PopGothicCjkTc */
 .two-col-boxes .column:last-child .box:nth-child(1) .main-text {
-  font-family: 'PopGothicCjkTc-Regular', sans-serif;
+  font-family: 'PopGothicCjkTc-Regular';
 } 
 
 /* 讓「字型12」的框內 main-text 改用 BpmfGenSenRounded-M */
 .two-col-boxes .column:last-child .box:last-child .main-text {
-  font-family: 'BpmfGenSenRounded-M', sans-serif;
+  font-family: 'BpmfGenSenRounded-M';
   font-size: 21px;
 }
 
